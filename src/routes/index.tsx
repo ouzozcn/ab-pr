@@ -189,6 +189,53 @@ function App() {
 					/>
 				</div>
 			</div>
+			{/* Landing Section End */}
+			{/* Landing Section Start */}
+			<SectionTitle
+				title="Neden a&b?"
+				description="51 Yıllık Güven, Tek Farkımız"
+			/>
+			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12">
+				<Accordion
+					type="single"
+					collapsible
+					defaultValue="firstItem"
+					className="w-full"
+				>
+					<AccordionItem value="firstItem">
+						<AccordionTrigger>Köklü Deneyim</AccordionTrigger>
+						<AccordionContent>
+							Türkiye'de halkla ilişkilerin henüz bir meslek olarak tanınmadığı
+							dönemde kurulduk. Bugün mesleğin kuramsal temellerine katkıda
+							bulunmuş, akademik literatüre girmiş bir kurumuz.
+						</AccordionContent>
+					</AccordionItem>
+					<AccordionItem value="secondItem">
+						<AccordionTrigger>Uzun Soluklu İş Birlikleri</AccordionTrigger>
+						<AccordionContent>
+							Müşterilerimizle ortalama iş birliği süremiz 10 yılın üzerinde.
+							Bizi tercih edenler genellikle bizi bırakmıyor. Bunun en büyük
+							nedeni: sonuç odaklı çalışmak kadar, güvene dayalı ilişki kurmak.
+						</AccordionContent>
+					</AccordionItem>
+					<AccordionItem value="thirdItem">
+						<AccordionTrigger>Uluslararası Ağ</AccordionTrigger>
+						<AccordionContent>
+							Londra merkezli Bolton & Quinn ve küresel kriz iletişimi uzmanı
+							Navigate Response ile stratejik ortaklıklarımız sayesinde
+							uluslararası projelerde de güçlü bir çözüm ortağıyız.
+						</AccordionContent>
+					</AccordionItem>
+				</Accordion>
+				<div className="Section__Image w-full md:w-1/2 bg-(--brand-secondary) text-white p-4 md:p-12">
+					<img
+						src={PlaceholderImage}
+						alt="Hero placeholder"
+						className="w-full h-full object-cover"
+					/>
+				</div>
+			</div>
+			{/* Landing Section End */}
 		</main>
 	);
 }
