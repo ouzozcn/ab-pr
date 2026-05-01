@@ -3,7 +3,7 @@ import logo from '../img/logo/ab_logo_md.svg';
 
 export default function Header() {
   return (
-    <header className="sticky top-0 w-full z-50 border-b border-(--line) bg-(--header-bg) p-4 md:px-12">
+    <header className="sticky top-0 w-full z-50 border-b border-(--line) bg-white p-4 md:px-12">
       <nav className="flex flex-wrap items-center justify-between ">
         <h2 className="m-0 shrink-0 text-base font-semibold tracking-tight">
           <Link

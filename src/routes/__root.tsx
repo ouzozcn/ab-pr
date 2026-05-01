@@ -19,7 +19,14 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'TanStack Start Starter',
+        title: 'a&b | 51 yıldır iletişimi dönüştürüyoruz.',
+        description: 'a&b | 51 yıldır iletişimi dönüştürüyoruz.',
+        keywords: 'a&b, iletişim, dönüştürüyoruz, 51 yıldır',
+        author: 'a&b',
+        robots: 'index, follow',
+        googlebot: 'index, follow',
+        google: 'index, follow',
+        yahoo: 'index, follow',
       },
     ],
     links: [
