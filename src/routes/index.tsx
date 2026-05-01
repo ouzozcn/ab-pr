@@ -1,4 +1,6 @@
+import { AnchorSimpleIcon } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
+import { MarqueeMaster } from "../components/kibo-ui/marquee/marqueeMaster";
 import {
 	Accordion,
 	AccordionContent,
@@ -36,19 +38,28 @@ function App() {
 				</p>
 			</section>
 
+			{/* Marquee Section */}
+			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24">
+				<MarqueeMaster />
+			</section>
+
 			{/* Our Services Section */}
 			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24">
-				<div className="Card__Container  flex flex-col md:flex-row w-full items-center justify-center divide-solid divide-y md:divide-x md:divide-y-0 divide-(--line)">
-					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12">
+				<div className="Card__Container  flex flex-col lg:flex-row w-full items-center justify-center divide-solid divide-y md:divide-x md:divide-y-0 divide-(--line)">
+					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
+						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
 						<p className="text-xl">51+ Yıl Sektörde Öncülük</p>
 					</div>
-					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12">
+					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
+						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
 						<p className="text-xl">Türkiye'nin İlk PR Şirketi</p>
 					</div>
-					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12">
+					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
+						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
 						<p className="text-xl">100+ Marka ile İş Birliği</p>
 					</div>
-					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12">
+					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
+						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
 						<p className="text-xl">500+ Tamamlanan Proje</p>
 					</div>
 				</div>
@@ -139,6 +150,45 @@ function App() {
 				</div>
 			</div>
 			{/* Landing Section End */}
+			{/* Landing Section Start */}
+			<SectionTitle
+				title="Etik Duruşumuz"
+				description="Her 'Evet'in Arkasında Bir 'Hayır' Vardır"
+			/>
+			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12">
+				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4">
+					<p>
+						Bizi farklı kılan yalnızca yaptıklarımız değil, yapmadıklarımızdır.
+						Tütün, nükleer enerji ve fosil yakıt şirketleriyle çalışmıyoruz.
+						Yeşil yıkamaya karşı duruyoruz. Lobicilik faaliyetlerinde yer
+						almıyoruz. 2023'te Clean Creatives taahhüdünü imzalayan ilk Türk
+						iletişim ajansı olduk.
+						<br /> <br />
+						Çünkü biliyoruz ki doğru iletişim, doğru ortaklarla kurulur.
+					</p>
+					<ul className="list-disc list-inside text-(--brand-text-secondary) text-md md:text-lg text-start">
+						<li>
+							Greenwashing'e sıfır tolerans. Yanıltıcı çevrecilik iddialarının
+							arkasında durmuyoruz.
+						</li>
+						<li>
+							Yasaklı alanlar. Tütün, fosil yakıt, nükleer enerji ve siyasi
+							partilerle çalışmıyoruz.
+						</li>
+						<li>
+							Medya etiği. Haber–menfaat ilişkisini hiçbir koşulda
+							onaylamıyoruz.
+						</li>
+					</ul>
+				</div>
+				<div className="Section__Image w-full md:w-1/2 bg-(--brand-secondary) text-white p-4 md:p-12">
+					<img
+						src={PlaceholderImage}
+						alt="Hero placeholder"
+						className="w-full h-full object-cover"
+					/>
+				</div>
+			</div>
 		</main>
 	);
 }
