@@ -29,7 +29,7 @@ function App() {
 			</section>
 
 			{/* Secondary Motto Section */}
-			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24 border-b border-(--line)">
+			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24 ">
 				<p>
 					1974'ten bu yana markalara güvenilir, cesur ve sürdürülebilir iletişim
 					çözümleri sunuyoruz. Bizim için iletişim yalnızca mesaj iletmek değil;
@@ -39,30 +39,8 @@ function App() {
 			</section>
 
 			{/* Marquee Section */}
-			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24">
+			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24 border-y border-(--line)">
 				<MarqueeMaster />
-			</section>
-
-			{/* Our Services Section */}
-			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24">
-				<div className="Card__Container  flex flex-col lg:flex-row w-full items-center justify-center divide-solid divide-y md:divide-x md:divide-y-0 divide-(--line)">
-					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
-						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
-						<p className="text-xl">51+ Yıl Sektörde Öncülük</p>
-					</div>
-					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
-						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
-						<p className="text-xl">Türkiye'nin İlk PR Şirketi</p>
-					</div>
-					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
-						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
-						<p className="text-xl">100+ Marka ile İş Birliği</p>
-					</div>
-					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
-						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
-						<p className="text-xl">500+ Tamamlanan Proje</p>
-					</div>
-				</div>
 			</section>
 			{/* Landing Section Start */}
 			<SectionTitle
@@ -93,6 +71,28 @@ function App() {
 				</div>
 			</div>
 			{/* Landing Section End */}
+			{/* Our Services Section */}
+			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24">
+				<div className="Card__Container  flex flex-col lg:flex-row w-full items-center justify-center divide-solid divide-y md:divide-x md:divide-y-0 divide-(--line)">
+					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
+						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
+						<p className="text-xl">51+ Yıl Sektörde Öncülük</p>
+					</div>
+					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
+						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
+						<p className="text-xl">Türkiye'nin İlk PR Şirketi</p>
+					</div>
+					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
+						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
+						<p className="text-xl">100+ Marka ile İş Birliği</p>
+					</div>
+					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
+						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
+						<p className="text-xl">500+ Tamamlanan Proje</p>
+					</div>
+				</div>
+			</section>
+
 			{/* Landing Section Start */}
 			<SectionTitle
 				title="Neler Yapıyoruz?"
