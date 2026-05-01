@@ -4,8 +4,10 @@ export const Route = createFileRoute('/')({ component: App })
 
 function App() {
   return (
-    <main className="page-wrap px-4 pb-8 pt-14">
+    <main className=" bg-teal-50 p-4 md:p-12 ">
     
+    <div className='bg-teal-50'>
+      <h1>asdsadsa</h1>  </div>
 
      
 
