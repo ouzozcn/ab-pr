@@ -136,7 +136,7 @@ body,
 
 body {
   margin: 0;
-  color: var(--brand-primary);
+  color: var(--brand-text-primary);
   font-family: var(--font-sans);
 
   overflow-x: hidden;
@@ -169,8 +169,8 @@ body::after {
 }
 
 a {
-  color: var(--brand-primary);
-  text-decoration-color: var(--brand-secondary);
+  color: var(--brand-text-primary);
+  text-decoration-color: var(--brand-primary);
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
@@ -248,7 +248,7 @@ a {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: var(--brand-primary);
+  color: var(--brand-text-primary);
 }
 
 .nav-link::after {
