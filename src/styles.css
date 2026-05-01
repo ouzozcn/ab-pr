@@ -21,7 +21,7 @@
   --inset-glint: rgba(255, 255, 255, 0.82);
   --kicker: #EC2E39;
   --bg-base: hsla(357, 83%, 65%, 0.1);
-  --header-bg: rgba(251, 255, 248, 0.84);
+  --header-bg: rgba(255, 255, 255, 0.05);
   --chip-bg: rgba(255, 255, 255, 0.8);
   --chip-line: rgba(47, 106, 74, 0.18);
   --link-bg-hover: rgba(255, 255, 255, 0.9);
@@ -31,6 +31,11 @@
   --brand-secondary:#D2131E;
   --brand-tertiary:#F05B64;
   --brand-dark: #003049;
+  --brand-green: #2E8B57;
+  --brand-earth: #C17A4A;
+  --brand-offwhite: #F9F6F1;
+  --brand-anthracite: #2C2C2C;
+
 }
 
 :root[data-theme="dark"] {
@@ -47,7 +52,7 @@
   --inset-glint: rgba(194, 247, 238, 0.14);
   --kicker: #b8efe5;
   --bg-base: #0a1418;
-  --header-bg: rgba(10, 20, 24, 0.8);
+  --header-bg: rgba(240, 91, 100, 0.05);
   --chip-bg: rgba(13, 28, 32, 0.9);
   --chip-line: rgba(141, 229, 219, 0.24);
   --link-bg-hover: rgba(24, 44, 49, 0.8);
@@ -154,7 +159,7 @@ pre code {
 
 .page-wrap {
   width: min(1080px, calc(100% - 2rem));
-  margin-inline: auto;
+ 
 }
 
 .display-title {
