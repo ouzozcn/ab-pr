@@ -5,7 +5,7 @@ export default function Footer() {
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className="mt-20 border-t border-(--line) bg-(--header-bg) p-4 md:px-12">
+		<footer className="mt-20 border-t border-(--line) bg-white p-4 md:px-12">
 			<div className=" flex flex-col items-center justify-between gap-4 md:flex-row">
 				<Link
 					to="/"
