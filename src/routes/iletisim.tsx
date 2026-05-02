@@ -18,7 +18,11 @@ function RouteComponent() {
 	return (
 		<main className="flex flex-col">
 			{/* Page Header */}
-			<PageHeader title="İletişim" description="Bize Projenizi Anlatın" />
+			<SectionTitle
+				className="px-4 md:px-16!"
+				title="İletişim"
+				description="Bize Projenizi Anlatın"
+			/>
 			{/* Contact Information */}
 			<section className="flex flex-col items-center justify-center  w-full p-12 md:p-24">
 				<div className="List__Item__Container grid grid-cols-1 md:grid-cols-2 w-full gap-4 md:gap-8 items-start">

@@ -188,11 +188,11 @@ function App() {
 						</li>
 					</ul>
 				</div>
-				<div className="Section__Image w-full md:w-1/2  text-white p-4 md:p-12">
+				<div className="Section__Image w-full md:w-1/2 max-h-[595px] text-white p-4 md:p-12 flex items-center justify-center">
 					<img
 						src={CCBadge}
-						alt="Hero placeholder"
-						className="w-full h-full object-contain"
+						alt="Clean Creatives Badge"
+						className="max-h-[595px] object-contain"
 					/>
 				</div>
 			</div>
