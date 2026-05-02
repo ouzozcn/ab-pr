@@ -1,12 +1,14 @@
 import { AnchorSimpleIcon } from "@phosphor-icons/react";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { MarqueeMaster } from "../components/kibo-ui/marquee/marqueeMaster";
+import SplitText from "../components/SplitText";
 import {
 	Accordion,
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,
 } from "../components/ui/accordion";
+import { Button } from "../components/ui/button";
 import SectionTitle from "../components/ui/SectionTitle";
 import PlaceholderImage from "../img/brand/image_placeholder_lg.png";
 export const Route = createFileRoute("/")({ component: App });
@@ -17,8 +19,12 @@ function App() {
 			{/* Hero Section */}
 			<section className="flex flex-col md:flex-row w-full">
 				<div className="Hero__Left flex w-full md:w-1/2  bg-(--brand-primary) items-center justify-center font-sans text-white text-xl md:text-6xl text-start p-4 md:p-12">
-					<p>Daha iyi bir dünya için 51 yıldır iletişimi dönüştürüyoruz. </p>
+					<SplitText
+						className="font-classic text-white text-xl md:text-6xl text-start font-semibold"
+						text="Daha iyi bir dünya için 51 yıldır iletişimi dönüştürüyoruz. "
+					/>
 				</div>
+
 				<div className="Hero__Right w-full md:w-1/2 bg-(--brand-secondary) text-white p-4 md:p-12">
 					<img
 						src={PlaceholderImage}
@@ -72,7 +78,7 @@ function App() {
 			</div>
 			{/* Landing Section End */}
 			{/* Our Services Section */}
-			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24">
+			<section className="Services__Section flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:pb-24 md:pt-2">
 				<div className="Card__Container  flex flex-col lg:flex-row w-full items-center justify-center divide-solid divide-y md:divide-x md:divide-y-0 divide-(--line)">
 					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
 						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
@@ -235,6 +241,30 @@ function App() {
 					/>
 				</div>
 			</div>
+			{/* Landing Section End */}
+			{/* Landing Section Start */}
+			<div className="flex flex-col md:flex-row w-full  bg-(--brand-primary) text-white p-12 md:px-24 py-12 h-auto lg:h-120 justify-start items-center gap-4 ">
+				<div className="Left__Section flex w-full text-4xl font-classic text-italic font-semibold  ">
+					<p>Finans'tan Kültür-Sanata, Enerjiden Sağlığa</p>
+				</div>
+				<div className="Right__Section flex flex-col text-md md:text-xl text-start items-start gap-4 md:gap-6">
+					<p>
+						30 yılı aşan iş birlikleriyle onlarca sektörde deneyim kazandık. Her
+						sektörün kendine özgü dinamiklerini, risklerini ve fırsatlarını
+						biliyor; buna göre özelleştirilmiş iletişim stratejileri
+						geliştiriyoruz.
+					</p>
+					<div className="flex w-auto items-center justify-center">
+						<Link
+							className="text-white! font-bold! hover:text-white/80!"
+							to="/is-ortaklarimiz"
+						>
+							Çalıştığımız Sektörleri Keşfedin
+						</Link>
+					</div>
+				</div>
+			</div>
+
 			{/* Landing Section End */}
 		</main>
 	);
