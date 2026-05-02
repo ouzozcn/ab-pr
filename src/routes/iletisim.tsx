@@ -1,14 +1,12 @@
 import {
 	EnvelopeIcon,
 	HeadsetIcon,
-	InstagramLogoIcon,
 	MapPinIcon,
 	PhoneIcon,
 } from "@phosphor-icons/react";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import ListItem from "../components/ListItem";
 import { Button } from "../components/ui/button";
-import PageHeader from "../components/ui/PageHeader";
 import SectionTitle from "../components/ui/SectionTitle";
 export const Route = createFileRoute("/iletisim")({
 	component: RouteComponent,

@@ -1,7 +1,7 @@
 interface ListItemProps {
-	title: string;
-	description: string;
-	icon: React.ReactNode;
+	title?: string;
+	description?: string;
+	icon?: React.ReactNode;
 }
 
 export default function ListItem({ title, description, icon }: ListItemProps) {
