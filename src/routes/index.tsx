@@ -10,6 +10,7 @@ import {
 } from "../components/ui/accordion";
 import SectionTitle from "../components/ui/SectionTitle";
 import PlaceholderImage from "../img/brand/image_placeholder_lg.png";
+import CCBadge from "../img/certificates/Clean_Creatives_Badge.svg";
 export const Route = createFileRoute("/")({ component: App });
 
 function App() {
@@ -55,9 +56,10 @@ function App() {
 			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12">
 				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4">
 					<p>
-						1974'te Türkiye'nin ilk halkla ilişkiler şirketi olarak yola çıktık.
-						O günden bu yana iletişimin toplumsal fayda yaratma gücüne inanıyor;
-						markalara güvenilir, etik ve sürdürülebilir çözümler sunuyoruz.
+						1974'te <b>Türkiye'nin ilk halkla ilişkiler şirketi</b> olarak yola
+						çıktık. O günden bu yana iletişimin toplumsal fayda yaratma gücüne
+						inanıyor; markalara güvenilir, etik ve sürdürülebilir çözümler
+						sunuyoruz.
 					</p>
 					<p>
 						Yarım asrı aşan bu yolculukta yalnızca Türkiye'nin ilk PR şirketi
@@ -103,7 +105,7 @@ function App() {
 				title="Neler Yapıyoruz?"
 				description="18 farklı uzmanlık alanında markanızın yanındayız."
 			/>
-			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12">
+			<div className="flex flex-col md:flex-row items-center justify-center w-full lg:min-h-[700px] p-12 md:p-24 gap-4 md:gap-12">
 				<div className="Section__Image w-full md:w-1/2 bg-(--brand-secondary) text-white p-4 md:p-12">
 					<img
 						src={PlaceholderImage}
@@ -160,14 +162,14 @@ function App() {
 				title="Etik Duruşumuz"
 				description="Her 'Evet'in Arkasında Bir 'Hayır' Vardır"
 			/>
-			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12">
+			<div className="flex flex-col md:flex-row items-center justify-center w-full lg:min-h-[700px] p-12 md:p-24 gap-4 md:gap-12">
 				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4">
 					<p>
 						Bizi farklı kılan yalnızca yaptıklarımız değil, yapmadıklarımızdır.
 						Tütün, nükleer enerji ve fosil yakıt şirketleriyle çalışmıyoruz.
 						Yeşil yıkamaya karşı duruyoruz. Lobicilik faaliyetlerinde yer
-						almıyoruz. 2023'te Clean Creatives taahhüdünü imzalayan ilk Türk
-						iletişim ajansı olduk.
+						almıyoruz. 2023'te <b>Clean Creatives</b> taahhüdünü imzalayan ilk
+						Türk iletişim ajansı olduk.
 						<br /> <br />
 						Çünkü biliyoruz ki doğru iletişim, doğru ortaklarla kurulur.
 					</p>
@@ -186,11 +188,11 @@ function App() {
 						</li>
 					</ul>
 				</div>
-				<div className="Section__Image w-full md:w-1/2 bg-(--brand-secondary) text-white p-4 md:p-12">
+				<div className="Section__Image w-full md:w-1/2  text-white p-4 md:p-12">
 					<img
-						src={PlaceholderImage}
+						src={CCBadge}
 						alt="Hero placeholder"
-						className="w-full h-full object-cover"
+						className="w-full h-full object-contain"
 					/>
 				</div>
 			</div>
@@ -200,7 +202,7 @@ function App() {
 				title="Neden a&b?"
 				description="51 Yıllık Güven, Tek Farkımız"
 			/>
-			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12">
+			<div className="flex flex-col md:flex-row items-center justify-center w-full lg:min-h-[700px] p-12 md:p-24 gap-4 md:gap-12">
 				<Accordion
 					type="single"
 					collapsible

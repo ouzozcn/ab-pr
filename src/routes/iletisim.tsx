@@ -7,6 +7,7 @@ import {
 } from "@phosphor-icons/react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import ListItem from "../components/ListItem";
+import { Button } from "../components/ui/button";
 import PageHeader from "../components/ui/PageHeader";
 import SectionTitle from "../components/ui/SectionTitle";
 export const Route = createFileRoute("/iletisim")({
@@ -68,7 +69,9 @@ function RouteComponent() {
 						Sosyal Medyada Takip Edin
 					</p>
 				</div>
-				<div className="Social__Media__Links flex flex-col items-center justify-center w-full h-full"></div>
+				<div className="Social__Media__Links flex flex-col items-center justify-center w-full h-full">
+					<Button variant="outline">Instagram</Button>
+				</div>
 			</div>
 		</main>
 	);
