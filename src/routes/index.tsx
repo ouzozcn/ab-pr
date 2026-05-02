@@ -8,7 +8,6 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "../components/ui/accordion";
-import { Button } from "../components/ui/button";
 import SectionTitle from "../components/ui/SectionTitle";
 import PlaceholderImage from "../img/brand/image_placeholder_lg.png";
 export const Route = createFileRoute("/")({ component: App });
