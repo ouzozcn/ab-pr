@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import SectionTitle from "#/components/ui/SectionTitle";
+import HistoryofAB from "../components/HistoryofAB";
 import PlaceholderImage from "../img/brand/image_placeholder_lg.png";
 export const Route = createFileRoute("/hikayemiz")({
 	component: RouteComponent,
@@ -65,6 +66,7 @@ function RouteComponent() {
 					</div>
 				</div>
 				{/* Landing Section End */}
+				<HistoryofAB />
 			</section>
 		</main>
 	);
