@@ -27,23 +27,23 @@ function RouteComponent() {
 					<ListItem
 						title="Adres"
 						description="Esenyalı Mah. Uygar Sok. Varyap Plaza No:61 Ofis No:247 PK- 34903 Pendik İstanbul"
-						icon={<MapPinIcon size={32} />}
+						icon={<MapPinIcon size={32} weight="duotone" />}
 					/>
 					<ListItem
 						title="E-posta"
 						description="abtanitim@ab-pr.com"
-						icon={<EnvelopeIcon size={32} />}
+						icon={<EnvelopeIcon size={32} weight="duotone" />}
 					/>
 					<ListItem
 						title="Telefon"
 						description="+90 212 233 22 38 "
-						icon={<PhoneIcon size={32} />}
+						icon={<PhoneIcon size={32} weight="duotone" />}
 					/>
 
 					<ListItem
 						title="Telefon"
 						description="+90 850 305 70 58"
-						icon={<HeadsetIcon size={32} />}
+						icon={<HeadsetIcon size={32} weight="duotone" />}
 					/>
 				</div>
 			</section>

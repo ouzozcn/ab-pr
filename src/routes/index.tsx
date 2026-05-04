@@ -1,4 +1,9 @@
-import { AnchorSimpleIcon } from "@phosphor-icons/react";
+import {
+	AnchorSimpleIcon,
+	ProjectorScreenIcon,
+	PuzzlePieceIcon,
+	TargetIcon,
+} from "@phosphor-icons/react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { MarqueeMaster } from "../components/kibo-ui/marquee/marqueeMaster";
 import SplitText from "../components/SplitText";
@@ -35,19 +40,62 @@ function App() {
 			</section>
 
 			{/* Secondary Motto Section */}
-			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24 ">
+			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-3xl font-semibold text-center p-12 md:p-24 ">
 				<p>
-					1974'ten bu yana markalara güvenilir, cesur ve sürdürülebilir iletişim
-					çözümleri sunuyoruz. Bizim için iletişim yalnızca mesaj iletmek değil;
-					toplumsal fayda yaratmanın, ortak değerleri korumanın ve geleceği
-					birlikte inşa etmenin yolu.
+					1974’ten bu yana markalara güvenilir, cesur ve sürdürülebilir iletişim
+					çözümleri sunan bir danışmanlık firmasıyız. İletişimi, toplumsal fayda
+					ve ortak yaşam için en güçlü araç olarak görüyoruz. 52 yıllık
+					deneyimimizle, her projede şeffaflık, kanıtlanmış yöntemler ve kalıcı
+					etki yaratma hedefiyle çalışıyoruz.
 				</p>
 			</section>
 
-			{/* Marquee Section */}
+			{/* Our Services Section Start */}
+			<section className="Services__Section flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:pb-24 md:pt-2">
+				<div className="Card__Container  flex flex-col lg:flex-row w-full items-center justify-center divide-solid divide-y md:divide-x md:divide-y-0 divide-(--line)">
+					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
+						<AnchorSimpleIcon
+							className="text-(--brand-primary)"
+							size={32}
+							weight="duotone"
+						/>
+						<p className="text-xl">52+ Yıl Sektörde Öncülük</p>
+					</div>
+					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
+						<TargetIcon
+							className="text-(--brand-primary)"
+							size={32}
+							weight="duotone"
+						/>
+						<p className="text-xl">Türkiye'nin İlk PR Şirketi</p>
+					</div>
+					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
+						<PuzzlePieceIcon
+							className="text-(--brand-primary)"
+							size={32}
+							weight="duotone"
+						/>
+						<p className="text-xl">
+							300+ Marka ile İş <br />
+							Birliği
+						</p>
+					</div>
+					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
+						<ProjectorScreenIcon
+							className="text-(--brand-primary)"
+							size={32}
+							weight="duotone"
+						/>
+						<p className="text-xl">1500+ Tamamlanan Proje</p>
+					</div>
+				</div>
+			</section>
+			{/* Our Services Section End */}
+			{/* Marquee Section 
 			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24 border-y border-(--line)">
 				<MarqueeMaster />
 			</section>
+			*/}
 			{/* Landing Section Start */}
 			<SectionTitle
 				title="Biz Kimiz?"
@@ -78,27 +126,6 @@ function App() {
 				</div>
 			</div>
 			{/* Landing Section End */}
-			{/* Our Services Section */}
-			<section className="Services__Section flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:pb-24 md:pt-2">
-				<div className="Card__Container  flex flex-col lg:flex-row w-full items-center justify-center divide-solid divide-y md:divide-x md:divide-y-0 divide-(--line)">
-					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
-						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
-						<p className="text-xl">51+ Yıl Sektörde Öncülük</p>
-					</div>
-					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
-						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
-						<p className="text-xl">Türkiye'nin İlk PR Şirketi</p>
-					</div>
-					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
-						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
-						<p className="text-xl">100+ Marka ile İş Birliği</p>
-					</div>
-					<div className="Card__Item flex flex-col items-center justify-center w-full md:w-1/4 h-full bg-white p-4 md:p-12 gap-2 md:gap-4">
-						<AnchorSimpleIcon className="text-(--brand-primary)" size={32} />
-						<p className="text-xl">500+ Tamamlanan Proje</p>
-					</div>
-				</div>
-			</section>
 
 			{/* Landing Section Start */}
 			<SectionTitle

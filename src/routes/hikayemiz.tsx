@@ -87,28 +87,28 @@ function RouteComponent() {
 					<div className="List__Item__Container grid grid-cols-1 md:grid-cols-2 w-full gap-4 md:gap-8 items-start">
 						<ListItem
 							title="İletişimde en güçlü araç, gerçeğin kendisidir. Müşterilerimizle, medyayla ve kamuoyuyla kurduğumuz her ilişkide şeffaflık ilk adımımızdır. Söylemediğimizi söylemiyoruz; söylediğimizin arkında duruyoruz."
-							icon={<AnchorSimpleIcon size={32} />}
+							icon={<AnchorSimpleIcon size={32} weight="duotone" />}
 						/>
 						<ListItem
 							title="Zor soruları sormaktan, doğruyu savunmaktan, gerektiğinde kârlı bir işe &quot;hayır&quot; demekten hiç vazgeçmedik. Cesaret, 51 yıldır en yakın yol arkadaşımız."
-							icon={<LineVerticalIcon size={32} />}
+							icon={<LineVerticalIcon size={32} weight="duotone" />}
 						/>
 						<ListItem
 							title="Bugünü değil, yarını da düşünerek çalışıyoruz. İletişim, geleceğe bırakılan bir izdir. Bu yüzden her projede kalıcı etki yaratmayı, kısa vadeli kazanımlar yerine uzun vadeli değer üretmeyi tercih ediyoruz."
-							icon={<FlowerIcon size={32} />}
+							icon={<FlowerIcon size={32} weight="duotone" />}
 						/>
 
 						<ListItem
 							title="Markalara değer katarken topluma fayda üretmeyi vazgeçilmez kabul ediyoruz. Ticari hedeflerle toplumsal sorumluluk çatışmaz; doğru kurgulandığında birbirini güçlendirir."
-							icon={<UsersThreeIcon size={32} />}
+							icon={<UsersThreeIcon size={32} weight="duotone" />}
 						/>
 						<ListItem
 							title="Her iş fırsatı bizim için doğru fırsat değildir. Neye &quot;evet diyeceğimiz kadar neye &quot;hayır&quot; diyeceğimizi de biliriz. Etik değerler rotamızı, müşteri portföyümüzü ve çalışma biçimimizi belirler."
-							icon={<CircleHalfTiltIcon size={32} />}
+							icon={<CircleHalfTiltIcon size={32} weight="duotone" />}
 						/>
 						<ListItem
 							title="İletişimin merkezinde insan var. Ekibimiz için, müşterilerimiz için, hedef kitleler için — hep insanı önce düşünüyoruz. Çünkü biliyoruz ki kalıcı etki, ancak insana dokunan iletişimle mümkündür."
-							icon={<PersonSimpleIcon size={32} />}
+							icon={<PersonSimpleIcon size={32} weight="duotone" />}
 						/>
 					</div>
 				</section>
