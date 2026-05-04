@@ -5,7 +5,7 @@ import {
 	TargetIcon,
 } from "@phosphor-icons/react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { MarqueeMaster } from "../components/kibo-ui/marquee/marqueeMaster";
+
 import SplitText from "../components/SplitText";
 import {
 	Accordion,
@@ -26,7 +26,7 @@ function App() {
 				<div className="Hero__Left flex w-full md:w-1/2  bg-(--brand-primary) items-center justify-center font-sans text-white text-xl md:text-6xl text-start p-4 md:p-12">
 					<SplitText
 						className="font-classic text-white text-xl md:text-6xl text-start font-semibold"
-						text="Daha iyi bir dünya için 51 yıldır iletişimi dönüştürüyoruz. "
+						text="Daha iyi bir dünya için 52 Yıldır iletişimi dönüştürüyoruz. "
 					/>
 				</div>
 
@@ -227,7 +227,7 @@ function App() {
 			{/* Landing Section Start */}
 			<SectionTitle
 				title="Neden a&b?"
-				description="51 Yıllık Güven, Tek Farkımız"
+				description="52 Yıllık Güven, Tek Farkımız"
 			/>
 			<div className="flex flex-col md:flex-row items-center justify-center w-full lg:min-h-[700px] p-12 md:p-24 gap-4 md:gap-12">
 				<Accordion

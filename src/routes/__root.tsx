@@ -22,9 +22,9 @@ export const Route = createRootRoute({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "a&b | 51 yıldır iletişimi dönüştürüyoruz.",
-				description: "a&b | 51 yıldır iletişimi dönüştürüyoruz.",
-				keywords: "a&b, iletişim, dönüştürüyoruz, 51 yıldır",
+				title: "a&b | 52 Yıldır iletişimi dönüştürüyoruz.",
+				description: "a&b | 52 Yıldır iletişimi dönüştürüyoruz.",
+				keywords: "a&b, iletişim, dönüştürüyoruz, 52 Yıldır",
 				author: "a&b",
 				robots: "index, follow",
 				googlebot: "index, follow",
