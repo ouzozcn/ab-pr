@@ -23,18 +23,10 @@ function App() {
 		<main className="flex flex-col ">
 			{/* Hero Section */}
 			<section className="flex flex-col md:flex-row w-full">
-				<div className="Hero__Left flex w-full md:w-1/2  bg-(--brand-primary) items-center justify-center font-sans text-white text-xl md:text-6xl text-start p-4 md:p-12">
+				<div className="Hero__Left flex w-full h-140 bg-(--brand-primary) items-center justify-center font-sans text-white text-xl md:text-6xl text-start p-4 md:p-12">
 					<SplitText
 						className="font-classic text-white text-xl md:text-6xl text-start font-semibold"
 						text="Daha iyi bir dünya için 52 Yıldır iletişimi dönüştürüyoruz. "
-					/>
-				</div>
-
-				<div className="Hero__Right w-full md:w-1/2 bg-(--brand-secondary) text-white p-4 md:p-12">
-					<img
-						src={PlaceholderImage}
-						alt="Hero placeholder"
-						className="w-full h-full object-cover"
 					/>
 				</div>
 			</section>
@@ -117,7 +109,7 @@ function App() {
 						en somut göstergesi.
 					</p>
 				</div>
-				<div className="Section__Image w-full md:w-1/2 bg-(--brand-secondary) text-white p-4 md:p-12">
+				<div className="Section__Image w-full md:w-1/2  text-white p-4 md:p-12">
 					<img
 						src={PlaceholderImage}
 						alt="Hero placeholder"
@@ -133,7 +125,7 @@ function App() {
 				description="18 farklı uzmanlık alanında markanızın yanındayız."
 			/>
 			<div className="flex flex-col md:flex-row items-center justify-center w-full lg:min-h-[700px] p-12 md:p-24 gap-4 md:gap-12">
-				<div className="Section__Image w-full md:w-1/2 bg-(--brand-secondary) text-white p-4 md:p-12">
+				<div className="Section__Image w-full md:w-1/2  text-white p-4 md:p-12">
 					<img
 						src={PlaceholderImage}
 						alt="Hero placeholder"
@@ -261,7 +253,7 @@ function App() {
 						</AccordionContent>
 					</AccordionItem>
 				</Accordion>
-				<div className="Section__Image w-full md:w-1/2 bg-(--brand-secondary) text-white p-4 md:p-12">
+				<div className="Section__Image w-full md:w-1/2  text-white p-4 md:p-12">
 					<img
 						src={PlaceholderImage}
 						alt="Hero placeholder"

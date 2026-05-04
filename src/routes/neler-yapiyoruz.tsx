@@ -2,8 +2,22 @@ import { createFileRoute } from "@tanstack/react-router";
 import SectionTitle from "#/components/ui/SectionTitle";
 import SKA01 from "../img/ska/SDG-1.svg";
 import SKA02 from "../img/ska/SDG-2.svg";
-
-// Import each SDG asset when adding rows: import SKA02 from "../img/ska/SDG-2.svg";
+import SKA03 from "../img/ska/SDG-3.svg";
+import SKA04 from "../img/ska/SDG-4.svg";
+import SKA05 from "../img/ska/SDG-5.svg";
+import SKA06 from "../img/ska/SDG-6.svg";
+import SKA07 from "../img/ska/SDG-7.svg";
+import SKA08 from "../img/ska/SDG-8.svg";
+import SKA09 from "../img/ska/SDG-9.svg";
+import SKA10 from "../img/ska/SDG-10.svg";
+import SKA11 from "../img/ska/SDG-11.svg";
+import SKA12 from "../img/ska/SDG-12.svg";
+import SKA13 from "../img/ska/SDG-13.svg";
+import SKA14 from "../img/ska/SDG-14.svg";
+import SKA15 from "../img/ska/SDG-15.svg";
+import SKA16 from "../img/ska/SDG-16.svg";
+import SKA17 from "../img/ska/SDG-17.svg";
+import SKA18 from "../img/ska/SDG-18.svg";
 
 interface SkaItem {
 	iconSrc: string;
@@ -219,13 +233,109 @@ function RouteComponent() {
 			iconSrc: SKA01,
 			title: "Yoksulluğa Son",
 			description:
-				"Kaynakların adil dağılımını destekleyen projeleri önemsiyoruz. Yoksulluğun azaltılması için sosyal sorumluluk girişimlerini iletişim stratejilerine dönüştürüyoruz.",
+				"Yıllardır sosyal sorumluluk projelerimizi yalnızca “yardım” değil, uzun vadeli dönüşüm araçları olarak kurguluyoruz. Gönüllü çalışmalarımızla dezavantajlı grupların sesi olduk, kaynakların adil dağılımı için iletişimle fark yarattık.",
 		},
 		{
 			iconSrc: SKA02,
 			title: "Açlığa Son",
 			description:
-				"Gıda güvenliği ve erişilebilirliği konularında farkındalık yaratıyor, sürdürülebilir tarım ve sağlıklı beslenme projelerine iletişim desteği veriyoruz.",
+				"Beslenme ve gıda güvenliği projelerini sadece “kampanya” değil, toplumsal bilinç hareketi olarak ele aldık. Markaların üretim ve dağıtım süreçlerini, sürdürülebilir tarım ve sağlıklı beslenme perspektifinden iletişimle güçlendirdik.",
+		},
+		{
+			iconSrc: SKA03,
+			title: "Sağlıklı Bireyler",
+			description:
+				"İlk günümüzden bu yana sağlık alanındaki iletişimi “reklam” değil, toplumsal sorumluluk konusu olarak gördük. Sağlık Bakanlığı projelerinden STK iş birliklerine kadar toplum sağlığına katkı sağlayan iletişim stratejileri geliştirdik.",
+		},
+		{
+			iconSrc: SKA04,
+			title: "Nitelikli Eğitim",
+			description:
+				"Kurucumuz Prof. Alaeddin Asna’nın akademideki çalışmalarıyla başlayan eğitim desteğimiz, bugün hâlâ sürüyor. Üniversitelerle düzenlediğimiz “Yeni Zamanlar ve Halkla İlişkiler” konferansları ile geleceğin iletişimcilerine yol gösteriyoruz.",
+		},
+		{
+			iconSrc: SKA05,
+			title: "Toplumsal Cinsiyet Eşitliği",
+			description:
+				"Kadının güçlenmesine yönelik uluslararası WEPs imzacısı olmamız, bu taahhüdün en net göstergesidir. İş ortaklarımızla birlikte yürüttüğümüz projelerde eşitliği yalnızca söylem değil, kurumsal politika haline getirdik.",
+		},
+		{
+			iconSrc: SKA06,
+			title: "Temiz Su ve Sanitasyon",
+			description:
+				"Su kaynaklarının korunması üzerine çalışan STK’ların projelerini yıllardır görünür kılıyoruz. İletişimi kullanarak, suya erişimin bir hak olduğunu topluma anlatıyoruz.",
+		},
+		{
+			iconSrc: SKA07,
+			title: "Erişilebilir ve Temiz Enerji",
+			description:
+				"Fosil yakıt şirketleriyle çalışmama kararı alarak, temiz enerji konusunda net bir duruş sergiledik. İletişim gücümüzü, yenilenebilir enerji ve sorumlu üretim yapan kurumların hikâyelerini büyütmek için kullanıyoruz.",
+		},
+		{
+			iconSrc: SKA08,
+			title: "İnsana Yakışır İş ve Ekonomik Büyüme",
+			description:
+				"Şirket içinde hiyerarşi yerine katılımı, rekabet yerine paylaşımı teşvik ediyoruz. Esnek ve güvene dayalı çalışma kültürümüz, sürdürülebilir iş modellerine örnek oluşturuyor.",
+		},
+		{
+			iconSrc: SKA09,
+			title: "Sanayi, Yenilikçilik ve Altyapı",
+			description:
+				"Kültür-sanattan endüstriye kadar birçok sektörde inovatif projeleri destekledik. Bolton & Quinn ortaklığı sayesinde sanatsal ve kültürel projeleri uluslararası arenaya taşıdık.",
+		},
+		{
+			iconSrc: SKA10,
+			title: "Eşitsizliklerin Azaltılması",
+			description:
+				"İletişimi sosyal adaletin bir aracı olarak gördük. Yardımsever Ltd. ile hayata geçirilen yardimicinara.org projesinde, “bir tıkla dünya değişir” diyerek herkesin eşit katkı sunabileceği bir platform oluşturduk.",
+		},
+		{
+			iconSrc: SKA11,
+			title: "Sürdürülebilir Şehirler ve Topluluklar",
+			description:
+				"Şehir kültürünü geliştiren projelerde iletişim ortağı olduk. Kültürel miras projelerine verdiğimiz destekle şehirlerin sadece binalardan değil, hikâyelerden oluştuğunu gösterdik.",
+		},
+		{
+			iconSrc: SKA12,
+			title: "Sorumlu Tüketim ve Üretim",
+			description:
+				"Yeşil yıkamanın her türüne karşı durduk. Çalıştığımız markaları, yalnızca çevreye ve topluma karşı samimi sorumluluk üstlendiklerinde destekledik. Çünkü bizim için sürdürülebilirlik, bir pazarlama argümanı değil, samimi bir taahhüttür.",
+		},
+		{
+			iconSrc: SKA13,
+			title: "İklim Eylemi",
+			description:
+				"Clean Creatives taahhüdünü imzalayan ilk Türk iletişim ajansı olarak iklim krizine karşı net bir tavır aldık. Gelecek nesiller için, iletişim gücümüzü iklim dostu çözümler lehine kullanıyoruz.",
+		},
+		{
+			iconSrc: SKA14,
+			title: "Sudaki Yaşam",
+			description:
+				"Denizcilik sektöründe küresel kriz iletişimini yöneten Navigate Response ortaklığı sayesinde, deniz ekosisteminin korunmasına katkıda bulunduk. Sudaki yaşamın devamı için güvenli ve sorumlu iletişim geliştirdik.",
+		},
+		{
+			iconSrc: SKA15,
+			title: "Karasal Yaşam",
+			description:
+				"Doğa koruma projelerinin iletişim ortağı olarak, çevre bilincini topluma yaygınlaştırdık. Çünkü biliyoruz ki karasal yaşamı korumak, aslında insan yaşamını korumaktır.",
+		},
+		{
+			iconSrc: SKA16,
+			title: "Barış, Adalet ve Güçlü Kurumlar",
+			description:
+				"İletişimi her zaman bir uzlaşma ve barış yöntemi olarak gördük. Demokrasiye, ifade özgürlüğüne ve güçlü kurumlara katkı sağlayan projelere destek olduk.",
+		},
+		{
+			iconSrc: SKA17,
+			title: "Hedefler için Ortaklıklar",
+			description:
+				"Yarım asrı aşkın süredir ulusal ve uluslararası iş birlikleri kuruyoruz. Çünkü biliyoruz ki bu hedeflere ancak birlikte yürüyerek ulaşabiliriz.",
+		},
+		{
+			iconSrc: SKA18,
+			title: "Küresel Sorumluluk",
+			description:
+				"Birleşmiş Milletler'in 17 Sürdürülebilir Kalkınma Hedefi'ni destekler, bu prensiplerin yaygınlaşması için çalışırız.",
 		},
 	];
 
@@ -240,12 +350,12 @@ function RouteComponent() {
 			{/* Contact Information */}
 			<section className="flex flex-col items-center justify-center w-full ">
 				{/* Secondary Motto Section */}
-				<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24 ">
+				<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-6 md:p-12 ">
 					<p>Title goes here</p>
 				</section>
 				{/* Landing Section Start */}
 				{/* Services Section */}
-				<section className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full p-12 md:p-24 space-y-8 md:space-y-0 gap-8 md:gap-12">
+				<section className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full p-6 md:p-12 space-y-8 md:space-y-0 gap-8 md:gap-12">
 					{serviceItems.map(({ title, spot, description }) => (
 						<div
 							key={title}
@@ -255,7 +365,7 @@ function RouteComponent() {
 								{title}
 							</p>
 							<p className="font-medium text-md md:text-lg">{spot}</p>
-							<p>{description}</p>
+							<p className="text-justify">{description}</p>
 						</div>
 					))}
 				</section>
@@ -269,7 +379,7 @@ function RouteComponent() {
 				{/* Etik İlkelerimiz Section End */}
 				{/* Etik İlkelerimiz List Start */}
 
-				<section className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full p-12 md:p-24 space-y-8 md:space-y-0 gap-8 md:gap-12">
+				<section className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full p-6 md:p-12 space-y-8 md:space-y-0 gap-8 md:gap-12">
 					{etikItems.map(({ orderNumber, title, description }) => (
 						<div
 							key={orderNumber}
@@ -293,7 +403,7 @@ function RouteComponent() {
 					description="İz bırakmak değil, etki yaratmak için varız."
 				/>
 				{/* A&B’nin Sürdürülebilirlik Manifestosu Section End */}
-				<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24 ">
+				<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-6 md:p-12 ">
 					<p>
 						Bizim için sürdürülebilirlik yalnızca çevresel değil, aynı zamanda
 						düşünsel, etik ve insani bir sorumluluktur. Fiziksel kaynak
@@ -305,23 +415,23 @@ function RouteComponent() {
 				</section>
 
 				{/* SKA İlkelerimiz List Start */}
-				<section className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full p-12 md:p-24 space-y-8 md:space-y-0 gap-8 md:gap-12">
+				<section className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full p-6 md:p-12 space-y-8 md:space-y-0 gap-8 md:gap-12">
 					{skaItems.map(({ iconSrc, title, description }) => (
 						<div
 							key={title}
-							className="List__Item__Body flex flex-col md:flex-row md:min-h-48  gap-2 md:gap-6 items-center justify-start font-sans p-2 md:p-6 "
+							className="List__Item__Body flex flex-col md:flex-row md:min-h-48  gap-4 md:gap-6 items-center justify-start font-sans p-2 md:p-6 "
 						>
 							<div className="List__Item__Icon flex shrink-0 items-center justify-center">
 								<img
 									src={iconSrc}
 									alt=""
-									className="h-14 w-14 md:h-40 md:w-40 object-contain"
+									className="h-28 w-28 md:h-40 md:w-40 object-contain"
 									loading="lazy"
 									decoding="async"
 								/>
 							</div>
 							<div className="List__Item__Content">
-								<p className="text-md md:text-lg text-justify ">
+								<p className="text-sm md:text-base text-justify ">
 									{description}
 								</p>
 							</div>
