@@ -1,5 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import SectionTitle from "#/components/ui/SectionTitle";
+import SKA01 from "../img/ska/SDG-1.svg";
+import SKA02 from "../img/ska/SDG-2.svg";
+
+// Import each SDG asset when adding rows: import SKA02 from "../img/ska/SDG-2.svg";
+
+interface SkaItem {
+	iconSrc: string;
+	title: string;
+	description: string;
+}
 
 interface ServiceItem {
 	title: string;
@@ -204,6 +214,20 @@ function RouteComponent() {
 				"Birleşmiş Milletler'in 17 Sürdürülebilir Kalkınma Hedefi'ni destekler, bu prensiplerin yaygınlaşması için çalışırız.",
 		},
 	];
+	const skaItems: SkaItem[] = [
+		{
+			iconSrc: SKA01,
+			title: "Yoksulluğa Son",
+			description:
+				"Kaynakların adil dağılımını destekleyen projeleri önemsiyoruz. Yoksulluğun azaltılması için sosyal sorumluluk girişimlerini iletişim stratejilerine dönüştürüyoruz.",
+		},
+		{
+			iconSrc: SKA02,
+			title: "Açlığa Son",
+			description:
+				"Gıda güvenliği ve erişilebilirliği konularında farkındalık yaratıyor, sürdürülebilir tarım ve sağlıklı beslenme projelerine iletişim desteği veriyoruz.",
+		},
+	];
 
 	return (
 		<main className="flex flex-col">
@@ -262,6 +286,49 @@ function RouteComponent() {
 					))}
 				</section>
 				{/* Etik İlkelerimiz List Ends */}
+				{/* A&B’nin Sürdürülebilirlik Manifestosu Section Start */}
+				<SectionTitle
+					className="px-4 md:px-16! w-full"
+					title="Sürdürülebilirlik Manifestomuz"
+					description="İz bırakmak değil, etki yaratmak için varız."
+				/>
+				{/* A&B’nin Sürdürülebilirlik Manifestosu Section End */}
+				<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-12 md:p-24 ">
+					<p>
+						Bizim için sürdürülebilirlik yalnızca çevresel değil, aynı zamanda
+						düşünsel, etik ve insani bir sorumluluktur. Fiziksel kaynak
+						tüketimimiz minimum olsa da temsil ettiğimiz değerler, seçtiğimiz
+						projeler ve kullandığımız dil toplumda kalıcı bir etki bırakır. Ne
+						yapmayacağımızı bildiğimiz kadar, neye “evet” diyeceğimizi de
+						biliriz: Adil, şeffaf ve sorumlu bir gelecek için iletişim üretiriz.
+					</p>
+				</section>
+
+				{/* SKA İlkelerimiz List Start */}
+				<section className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full p-12 md:p-24 space-y-8 md:space-y-0 gap-8 md:gap-12">
+					{skaItems.map(({ iconSrc, title, description }) => (
+						<div
+							key={title}
+							className="List__Item__Body flex flex-col md:flex-row md:min-h-48  gap-2 md:gap-6 items-center justify-start font-sans p-2 md:p-6 "
+						>
+							<div className="List__Item__Icon flex shrink-0 items-center justify-center">
+								<img
+									src={iconSrc}
+									alt=""
+									className="h-14 w-14 md:h-40 md:w-40 object-contain"
+									loading="lazy"
+									decoding="async"
+								/>
+							</div>
+							<div className="List__Item__Content">
+								<p className="text-md md:text-lg text-justify ">
+									{description}
+								</p>
+							</div>
+						</div>
+					))}
+				</section>
+				{/* SKA İlkelerimiz List Ends */}
 			</section>
 		</main>
 	);
