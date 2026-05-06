@@ -33,22 +33,29 @@ function RouteComponent() {
 				{/* Landing Section Start */}
 
 				<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12 text-justify ">
-					<div className="flex flex-col items-center justify-center w-full text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4">
+					<div className="Section__Image w-full md:w-1/2 bg-(--brand-secondary) text-white p-4 md:p-12">
+						<img
+							src={PlaceholderImage}
+							alt="Hero placeholder"
+							className="w-full h-full object-cover"
+						/>
+					</div>
+					<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4">
 						<p>
 							1974 yılında Prof. Dr. Alaeddin Asna tarafından kurulan A&B
-							İletişim, Türkiye’nin ilk halkla ilişkiler şirketidir.
+							İletişim, <b>Türkiye’nin ilk halkla ilişkiler şirketidir</b>.
 							Cağaloğlu’ndaki mütevazı bir ofisten başlayan yolculuğumuz, kısa
 							sürede iş dünyasının güvenini kazanarak Teşvikiye’de köklü bir
 							iletişim kurumuna dönüştü. 1995’te Sibel Asna’nın liderliğinde
 							yeniden yapılanan şirketimiz, 2000’lerden itibaren A&B İletişim
-							A.Ş. adıyla yoluna devam etti. Bugün 52 yıllık deneyimimizle, hem
-							ulusal hem de uluslararası düzeyde stratejik ortaklıklarla
-							iletişim gücümüzü büyütüyoruz.
+							A.Ş. adıyla yoluna devam etti. Bugün{" "}
+							<b>52 yıllık deneyimimizle</b>, hem ulusal hem de uluslararası
+							düzeyde stratejik ortaklıklarla iletişim gücümüzü büyütüyoruz.
 						</p>
 						<p>
 							Yarım asrı aşan bu yolculukta, yalnızca Türkiye’nin ilk halkla
 							ilişkiler şirketi olmadık; aynı zamanda mesleğin pek çok alanında
-							“ilk”lerin öncüsü olduk. Halkla ilişkiler ve iletişimde
+							<b>“ilk”lerin öncüsü</b> olduk. Halkla ilişkiler ve iletişimde
 							geliştirdiğimiz yaklaşımlar, akademik literatüre girerek mesleğin
 							kuramsal temellerine de katkıda bulundu. İş ortaklarımızla 30 yılı
 							bulan uzun soluklu iş birlikleri kurduk; bu da hem
@@ -59,45 +66,42 @@ function RouteComponent() {
 				</div>
 				{/* Landing Section End */}
 				{/* Landing Section Start */}
-				<div className="Section__Image w-full md:w-1/2 bg-(--brand-secondary) text-white p-4 md:p-12">
-					<img
-						src={PlaceholderImage}
-						alt="Hero placeholder"
-						className="w-full h-full object-cover"
-					/>
-				</div>
+
 				<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12 text-justify ">
 					<div className="flex flex-col items-center justify-center w-full  text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4">
 						<p>
 							Ama bizi biz yapan sadece tarihimiz değil. En başından beri
-							iletişimi daha iyi bir yaşamın temel aracı olarak görüyoruz. Bizim
-							için iletişim; şeffaflık, cesaret ve sürdürülebilirlik demek.
-							Toplumun ortak faydasını gözetmek, markalara kalıcı değer katmak
-							ve geleceğe sorumlulukla bakmak demek. İşte bu yüzden 52 yıldır
-							aynı pusulayı takip ediyoruz: Vicdan, hakkaniyet ve ifade
-							özgürlüğü. Çünkü biliyoruz ki, iletişim yalnızca değişimi
-							yansıtmaz; değişimi mümkün kılar.
+							iletişimi <b>daha iyi bir yaşamın temel aracı</b> olarak
+							görüyoruz. Bizim için iletişim; şeffaflık, cesaret ve
+							sürdürülebilirlik demek. Toplumun ortak faydasını gözetmek,
+							markalara kalıcı değer katmak ve geleceğe sorumlulukla bakmak
+							demek. İşte bu yüzden 52 yıldır aynı pusulayı takip ediyoruz:
+							Vicdan, hakkaniyet ve ifade özgürlüğü.{" "}
+							<b>
+								Çünkü biliyoruz ki, iletişim yalnızca değişimi yansıtmaz;
+								değişimi mümkün kılar.
+							</b>
 						</p>
 						<p>
 							İşte tam da bu yüzden Ocak 2026 itibariyle, etik değerlerimizi
 							kalıcılaştırmak için, Türkiye’de ve dünyada nadir görülen bir
 							kurumsal modele geçtik. 52 yıllık etik anlayışımızı koruma ve
 							geleceğe taşıma kararı aldık. Bu doğrultuda, şirketin tüm
-							hisselerini Sibel Asna Armaş Vakfı’na devretti. Yeni yapımızla
-							birlikte yolumuza A&B Danışmanlık adıyla devam ediyoruz. Bu adımı,
-							klasik bir şirket devri olarak değil; iletişim gibi son derece
-							güçlü ve aynı zamanda yüksek sorumluluk taşıyan bir alanda,
+							hisselerini Sibel Asna <b>Armaş Vakfı</b>’na devretti. Yeni
+							yapımızla birlikte yolumuza A&B Danışmanlık adıyla devam ediyoruz.
+							Bu adımı, klasik bir şirket devri olarak değil; iletişim gibi son
+							derece güçlü ve aynı zamanda yüksek sorumluluk taşıyan bir alanda,
 							mülkiyet yerine misyonu, kısa vadeli kazançlar yerine etik
 							sürekliliği merkeze alan bilinçli bir kurumsal tercih olarak
 							görüyoruz. Yeni yapımızla birlikte, iletişim danışmanlığındaki
 							deneyimimizi Armaş Vakfı’nın iklim, sürdürülebilirlik, etik,
 							toplumsal etki ve liderlik alanlarındaki bilgi birikimiyle
 							birleştiriyoruz. Bu sayede hizmet kapsamımızı genişletiyoruz. Yeni
-							dönemde A&B Danışmanlık olarak; etik yönetim ve kurumsal değer
-							tanımlaması, sürdürülebilirlik ve iklim iletişimi, topluluk
-							oluşturma ve değişim liderliği, “yeşil” ve “mavi” yıkamadan
-							arınmış şeffaf iletişim modelleri üzerine çalışan kurumlar için
-							uzun vadeli bir iş ortağı olmayı hedefliyoruz.
+							dönemde <b>A&B Danışmanlık</b> olarak; etik yönetim ve kurumsal
+							değer tanımlaması, sürdürülebilirlik ve iklim iletişimi, topluluk
+							oluşturma ve değişim liderliği, <b>“yeşil”</b> ve <b>“mavi”</b>{" "}
+							yıkamadan arınmış şeffaf iletişim modelleri üzerine çalışan
+							kurumlar için uzun vadeli bir iş ortağı olmayı hedefliyoruz.
 						</p>
 					</div>
 				</div>
@@ -108,7 +112,7 @@ function RouteComponent() {
 					<div className="Hero__Left flex flex-col w-full md:w-1/2  bg-(--brand-primary) items-center justify-center font-sans text-white text-xl md:text-6xl  text-start p-4 md:p-12 gap-4 md:gap-12">
 						<SplitText
 							className="font-classic text-white text-xl md:text-6xl text-start font-semibold"
-							text="Kurucumuz Prof. Dr. Alaeddin Asna'yı Tanıyalım"
+							text="Armaş Vakfı'nı Tanıyalım"
 						/>
 						<Button size="lg">Daha Fazla</Button>
 					</div>
