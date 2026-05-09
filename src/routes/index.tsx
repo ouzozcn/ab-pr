@@ -15,6 +15,7 @@ import {
 	AccordionTrigger,
 } from "../components/ui/accordion";
 import SectionTitle from "../components/ui/SectionTitle";
+import BgImage from "../img/brand/bg-image.png";
 import PlaceholderImage from "../img/brand/image_placeholder_lg.png";
 import CCBadge from "../img/certificates/Clean_Creatives_Badge.svg";
 export const Route = createFileRoute("/")({ component: App });
@@ -23,8 +24,11 @@ function App() {
 	return (
 		<main className="flex flex-col ">
 			{/* Hero Section */}
-			<section className="flex flex-col md:flex-row w-full">
-				<div className="Hero__Left flex w-full h-140 bg-(--brand-primary) items-center justify-center font-sans text-white text-xl md:text-6xl text-start p-4 md:p-12">
+			<section
+				className="flex flex-col md:flex-row w-full bg-cover bg-center"
+				style={{ backgroundImage: `url(${BgImage})` }}
+			>
+				<div className="Hero__Left flex w-full h-140  items-center justify-center font-sans text-white text-xl md:text-6xl text-start p-4 md:p-12">
 					<SplitText
 						className="font-classic text-white text-xl md:text-6xl text-start font-semibold"
 						text="Daha iyi bir dünya için 52 Yıldır iletişimi dönüştürüyoruz. "
