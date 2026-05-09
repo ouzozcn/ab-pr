@@ -84,7 +84,7 @@ export default function Footer() {
 			</div>
 			<div className="flex flex-col items-center justify-center gap-4 md:flex-row">
 				<p className="mt-4 items-center text-center text-sm text-(--brand-anthracite) md:text-left">
-					&copy; {year} a&b. Tüm hakları saklıdır.
+					&copy; {year} A&B. Tüm hakları saklıdır.
 				</p>
 			</div>
 		</footer>

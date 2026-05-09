@@ -15,6 +15,10 @@ import ListItem from "../components/ListItem";
 import SplitText from "../components/SplitText";
 import ArmasImage from "../img/armas/armas_vakif_building.jpg";
 import AlaaddinAsnaImage from "../img/brand/alaaddin-asna.jpg";
+import BoltonQuinnImage from "../img/customers/boltonquinn.svg";
+import CCBadge from "../img/customers/cclogo.svg";
+import NavigateResponseImage from "../img/customers/navresponse.svg";
+import WEPsImage from "../img/customers/wepslogo.svg";
 export const Route = createFileRoute("/hikayemiz")({
 	component: RouteComponent,
 });
@@ -186,6 +190,68 @@ function RouteComponent() {
 					</div>
 				</section>
 			</section>
+			<SectionTitle
+				className="px-4 md:px-16! w-full"
+				title="Uluslararası İş Birliklerimiz"
+			/>
+			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-16 gap-4 md:gap-12">
+				<div className="flex flex-col items-center justify-center gap-4">
+					<p className="text-3xl font-semibold text-(--brand-primary) ">
+						Kriz İletişimi
+					</p>
+					<img src={NavigateResponseImage} alt="Navigate Response" />
+					<p className="text-2xl font-semibold">Navigate Response </p>
+					<p className="text-lg">
+						Uluslararası nakliye, liman ve offshore alanlarında uzmanlaşmış
+						Londra merkezli küresel kriz iletişim ağı Navigate Response'un
+						Türkiye'deki tek ve resmi çözüm ortağıyız.{" "}
+					</p>
+				</div>
+				<div className="flex flex-col items-center justify-center gap-4">
+					<p className="text-3xl font-semibold text-(--brand-primary) ">
+						Sanat ve Lüks Marka İletişimi
+					</p>
+					<img src={BoltonQuinnImage} alt="Navigate Response" />
+					<p className="text-2xl font-semibold">BOLTON&QUINN </p>
+					<p className="text-lg">
+						Türkiye ve bölge ülkelerinde hayata geçirilen uluslararası nitelikli
+						kültür-sanat etkinliklerinin iletişim çalışmaları için Londra
+						merkezli Bolton&Quinn ile stratejik ortağız.
+					</p>
+				</div>
+			</div>
+			<SectionTitle
+				className="px-4 md:px-16! w-full"
+				title="Uluslararası Hak Temelli İş Birliklerimiz"
+			/>
+			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-16 gap-4 md:gap-12">
+				<div className="flex flex-col items-center justify-center gap-4">
+					<p className="text-3xl font-semibold text-(--brand-primary) ">
+						Çevre Hakları
+					</p>
+					<img src={CCBadge} alt="Navigate Response" />
+					<p className="text-2xl font-semibold">Clean Creatives </p>
+					<p className="text-lg">
+						Fosil yakıt şirketleri, ilgili meslek kuruluşu ve ticaret odaları
+						veya fosil yakıt endüstrisiyle ilişkili paravan gruplar için
+						çalışmayacağımıza dair Clean Creatives taahhüdü imzacısıyız.
+					</p>
+				</div>
+				<div className="flex flex-col items-center justify-center gap-4">
+					<p className="text-3xl font-semibold text-(--brand-primary) ">
+						Kadın Hakları
+					</p>
+					<img src={WEPsImage} alt="Navigate Response" />
+					<p className="text-2xl font-semibold">
+						WOMEN’S EMPROVEMENT PRINCIPLES{" "}
+					</p>
+					<p className="text-lg">
+						Şeffaf ve etik iletişim anlayışıyla toplumda fayda yaratmak,
+						toplumsal cinsiyet eşitliğini desteklemek ve kadınların iş yaşamında
+						güçlenmesini sağlamak üzere WEPs imzacısıyız.
+					</p>
+				</div>
+			</div>
 		</main>
 	);
 }

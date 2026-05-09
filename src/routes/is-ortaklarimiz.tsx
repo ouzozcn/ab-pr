@@ -523,7 +523,7 @@ function RouteComponent() {
 						key={item.id}
 						type="button"
 						onClick={() => setSelectedIndustry(item)}
-						className="Industry__Item group flex flex-col h-full w-full items-center justify-center gap-4 md:gap-24 rounded-lg border border-transparent bg-stone-100/50 p-12 md:p-16 text-left transition hover:bg-stone-100 focus-visible:border-(--brand-primary) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--brand-primary)/30"
+						className="Industry__Item group flex flex-col h-full w-full items-center justify-center gap-4 md:gap-24 rounded-lg border border-transparent bg-stone-100/50 p-12 md:p-16 text-left transition hover:bg-stone-100 hover:cursor-pointer focus-visible:border-(--brand-primary) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--brand-primary)/30"
 					>
 						<div
 							className="Industry__Item__Icon flex flex-col items-start justify-center text-(--brand-primary)"
