@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import SectionTitle from "#/components/ui/SectionTitle";
+import AlaaddinAsnaImage from "../img/brand/alaaddin-asna-2.jpg";
 export const Route = createFileRoute("/alaeddin-asna")({
 	component: RouteComponent,
 });
@@ -13,6 +14,13 @@ function RouteComponent() {
 				title="Kurucumuz: Prof. Dr. Alaeddin Asna"
 				description="Türkiye’de Halkla İlişkiler Mesleğinin Kurucusu"
 			/>
+			<div className="Section__Image ] w-full p-4 md:p-12 flex  items-center justify-center rounded-xl overflow-hidden">
+				<img
+					src={AlaaddinAsnaImage}
+					alt="Alaeddin Asna"
+					className="w-[720px] object-cover rounded-xl"
+				/>
+			</div>
 			{/* Secondary Motto Section */}
 			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-3xl font-semibold text-center p-4 md:px-16 md:pt-12 md:pb-0">
 				<p>

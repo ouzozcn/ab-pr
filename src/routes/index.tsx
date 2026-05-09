@@ -15,6 +15,7 @@ import {
 	AccordionTrigger,
 } from "../components/ui/accordion";
 import SectionTitle from "../components/ui/SectionTitle";
+import BannerSustain from "../img/brand/banner-sustain.png";
 import BgImage from "../img/brand/bg-image.png";
 import PlaceholderImage from "../img/brand/image_placeholder_lg.png";
 import CCBadge from "../img/certificates/Clean_Creatives_Badge.svg";
@@ -132,8 +133,8 @@ function App() {
 			<div className="flex flex-col md:flex-row items-center justify-center w-full lg:min-h-[700px] p-12 md:p-24 gap-4 md:gap-12">
 				<div className="Section__Image w-full md:w-1/2  text-white p-4 md:p-12">
 					<img
-						src={PlaceholderImage}
-						alt="Hero placeholder"
+						src={BannerSustain}
+						alt="Banner Sustain"
 						className="w-full h-full object-cover"
 					/>
 				</div>

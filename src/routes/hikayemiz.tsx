@@ -38,7 +38,7 @@ function RouteComponent() {
 					<div className="Section__Image w-full md:w-1/2 rounded-xl overflow-hidden">
 						<img
 							src={AlaaddinAsnaImage}
-							alt="Hero placeholder"
+							alt="Kurucumuz Prof. Dr. Alaeddin Asna"
 							className="w-full h-full object-cover"
 						/>
 					</div>
@@ -138,7 +138,7 @@ function RouteComponent() {
 					<div className="Hero__Right w-full md:w-1/2">
 						<img
 							src={ArmasImage}
-							alt="Hero placeholder"
+							alt="Armaş Vakfı"
 							className="w-full h-full object-cover"
 						/>
 					</div>
