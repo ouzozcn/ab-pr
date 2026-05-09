@@ -3,7 +3,13 @@ import { Timeline } from "@/components/ui/timeline";
 export default function HistoryofAB() {
 	const data = [
 		{
-			title: "1970'ler <br/> Kuruluş ve Öncülük",
+			title: (
+				<>
+					1970&apos;ler
+					<br />
+					Kuruluş ve Öncülük
+				</>
+			),
 			content: (
 				<div className="space-y-6">
 					<p className="text-md font-normal text-neutral-800 md:text-xl">
@@ -29,7 +35,13 @@ export default function HistoryofAB() {
 			),
 		},
 		{
-			title: "1980'ler – Mesleğin Şekillenmesi",
+			title: (
+				<>
+					1980&apos;ler
+					<br />
+					Mesleğin Şekillenmesi
+				</>
+			),
 			content: (
 				<div className="space-y-6">
 					<p className="text-md font-normal text-neutral-800 md:text-xl">
@@ -48,7 +60,13 @@ export default function HistoryofAB() {
 			),
 		},
 		{
-			title: "1990'lar – Akademi ve Yeni Yaklaşımlar",
+			title: (
+				<>
+					1990&apos;lar
+					<br />
+					Akademi ve Yeni Yaklaşımlar
+				</>
+			),
 			content: (
 				<div className="space-y-6">
 					<p className="text-md font-normal text-neutral-800 md:text-xl">
@@ -69,7 +87,13 @@ export default function HistoryofAB() {
 			),
 		},
 		{
-			title: "2000'ler – Yeniden Yapılanma ve Uluslararası Açılım",
+			title: (
+				<>
+					2000&apos;ler
+					<br />
+					Yeniden Yapılanma ve Uluslararası Açılım
+				</>
+			),
 			content: (
 				<div className="space-y-6">
 					<p className="text-md font-normal text-neutral-800 md:text-xl">
@@ -92,7 +116,13 @@ export default function HistoryofAB() {
 			),
 		},
 		{
-			title: "2010'lar – Sosyal Etki ve Sorumluluk",
+			title: (
+				<>
+					2010&apos;lar
+					<br />
+					Sosyal Etki ve Sorumluluk
+				</>
+			),
 			content: (
 				<div className="space-y-6">
 					<p className="text-md font-normal text-neutral-800 md:text-xl">
@@ -146,7 +176,13 @@ export default function HistoryofAB() {
 			),
 		},
 		{
-			title: "2020'ler – Dönüşüm, Etik ve Sürdürülebilirlik",
+			title: (
+				<>
+					2020&apos;ler
+					<br />
+					Dönüşüm, Etik ve Sürdürülebilirlik
+				</>
+			),
 			content: (
 				<div className="space-y-6">
 					<p className="text-md font-normal text-neutral-800 md:text-xl">

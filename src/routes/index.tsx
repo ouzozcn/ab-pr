@@ -96,17 +96,17 @@ function App() {
 			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12">
 				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4">
 					<p>
-						1974'te <b>Türkiye'nin ilk halkla ilişkiler şirketi</b> olarak yola
-						çıktık. O günden bu yana iletişimin toplumsal fayda yaratma gücüne
-						inanıyor; markalara güvenilir, etik ve sürdürülebilir çözümler
-						sunuyoruz.
+						<b>50 yılı aşkın süredir</b> iletişimin, <b>daha iyi bir yaşamın</b>{" "}
+						temel taşı olduğuna inanıyor ve bunu tüm karar vericilere anlatmayı
+						en önemli hedeflerimizden biri olarak görüyoruz. Sahip olduğumuz
+						etik ilkelerin ışığında iletişim yolculuğumuzu sürdürüyoruz.
 					</p>
 					<p>
-						Yarım asrı aşan bu yolculukta yalnızca Türkiye'nin ilk PR şirketi
-						olmadık; mesleğin pek çok alanında "ilk"lerin öncüsü olduk. İş
-						ortaklarımızla 30 yılı bulan uzun soluklu iş birlikleri kurduk. Bu
-						da hem güvenilirliğimizin hem de değerlerimize olan bağlılığımızın
-						en somut göstergesi.
+						Amacımız, kurumların{" "}
+						<b>şeffaf, kanıtlara dayalı ve cesur stratejiler</b>
+						geliştirmelerine destek olmak,{" "}
+						<b>toplumsal ve çevresel değerlere odaklı</b> bir iletişim
+						kurgulamalarını sağlamak.
 					</p>
 				</div>
 				<div className="Section__Image w-full md:w-1/2  text-white p-4 md:p-12">

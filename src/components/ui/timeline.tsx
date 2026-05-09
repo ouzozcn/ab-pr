@@ -4,7 +4,7 @@ import type React from "react";
 import { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
-	title: string;
+	title: React.ReactNode;
 	content: React.ReactNode;
 }
 

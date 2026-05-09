@@ -190,6 +190,11 @@ function RouteComponent() {
 					</div>
 				))}
 			</section>
+			<SectionTitle
+				className="px-4 md:px-16! w-full"
+				title="Gönüllü İşlerimiz"
+				description="Sivil Toplumun Gücüne İnanıyor, Onlarla Birlikte Yürüyoruz"
+			/>
 		</main>
 	);
 }

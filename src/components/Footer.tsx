@@ -1,6 +1,12 @@
+import {
+	FacebookLogoIcon,
+	InstagramLogoIcon,
+	LinkedinLogoIcon,
+	XLogoIcon,
+} from "@phosphor-icons/react";
 import { Link } from "@tanstack/react-router";
 import logo from "../img/logo/ab_logo_md.svg";
-
+import SocialLink from "./SocialLink";
 export default function Footer() {
 	const year = new Date().getFullYear();
 
@@ -33,7 +39,7 @@ export default function Footer() {
 						className="nav-link"
 						activeProps={{ className: "nav-link is-active" }}
 					>
-						Neler Yapıyoruz
+						Neler Yapıyoruz?
 					</Link>
 					<Link
 						to="/is-ortaklarimiz"
@@ -57,6 +63,24 @@ export default function Footer() {
 						İletişim
 					</Link>
 				</div>
+			</div>
+			<div className="Social__Media__Links flex flex-col md:flex-row items-center justify-end w-full h-auto p-4 gap-4 md:gap-12">
+				<SocialLink
+					href={"https://www.instagram.com/avebiletisim/"}
+					icon={<InstagramLogoIcon size={24} weight="fill" />}
+				/>
+				<SocialLink
+					href={"https://www.facebook.com/avebiletisim"}
+					icon={<FacebookLogoIcon size={24} weight="fill" />}
+				/>
+				<SocialLink
+					href={"https://x.com/avebiletisim"}
+					icon={<XLogoIcon size={24} weight="fill" />}
+				/>
+				<SocialLink
+					href={"https://www.linkedin.com/company/1260750"}
+					icon={<LinkedinLogoIcon size={24} weight="fill" />}
+				/>
 			</div>
 			<div className="flex flex-col items-center justify-center gap-4 md:flex-row">
 				<p className="mt-4 items-center text-center text-sm text-(--brand-anthracite) md:text-left">

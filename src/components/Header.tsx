@@ -34,7 +34,7 @@ export default function Header() {
 						className="nav-link"
 						activeProps={{ className: "nav-link is-active" }}
 					>
-						Neler Yapıyoruz
+						Neler Yapıyoruz?
 					</Link>
 					<Link
 						to="/is-ortaklarimiz"

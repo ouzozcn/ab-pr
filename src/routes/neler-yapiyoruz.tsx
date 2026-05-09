@@ -345,14 +345,12 @@ function RouteComponent() {
 			<SectionTitle
 				className="px-4 md:px-16!"
 				title="Neler Yapıyoruz?"
-				description="18 farklı uzmanlık alanında markanızın yanındayız."
+				description="Markaların farklı alanlardaki ihtiyaçlarına özel hizmetler geliştiriyoruz."
 			/>
 			{/* Contact Information */}
 			<section className="flex flex-col items-center justify-center w-full ">
 				{/* Secondary Motto Section */}
-				<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-2xl text-center p-6 md:p-12 ">
-					<p>Title goes here</p>
-				</section>
+
 				{/* Landing Section Start */}
 				{/* Services Section */}
 				<section className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full p-6 md:p-12 space-y-8 md:space-y-0 gap-8 md:gap-12">

@@ -12,6 +12,7 @@ import HistoryofAB from "../components/HistoryofAB";
 import ListItem from "../components/ListItem";
 import SplitText from "../components/SplitText";
 import { Button } from "../components/ui/button";
+import ArmasImage from "../img/armas/armas_vakif_building.jpg";
 import PlaceholderImage from "../img/brand/image_placeholder_lg.png";
 export const Route = createFileRoute("/hikayemiz")({
 	component: RouteComponent,
@@ -67,7 +68,7 @@ function RouteComponent() {
 				{/* Landing Section End */}
 				{/* Landing Section Start */}
 
-				<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12 text-justify ">
+				<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:pt-0 md:pb-24 gap-4 md:gap-12 text-justify ">
 					<div className="flex flex-col items-center justify-center w-full  text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4">
 						<p>
 							Ama bizi biz yapan sadece tarihimiz değil. En başından beri
@@ -109,7 +110,7 @@ function RouteComponent() {
 				{/* History of Founder Starts */}
 				{/* Hero Section */}
 				<section className="flex flex-col md:flex-row w-full md:mb-24">
-					<div className="Hero__Left flex flex-col w-full md:w-1/2  bg-(--brand-primary) items-center justify-center font-sans text-white text-xl md:text-6xl  text-start p-4 md:p-12 gap-4 md:gap-12">
+					<div className="Hero__Left flex flex-col w-full md:w-1/2  bg-green-900 items-center justify-center font-sans text-white text-xl md:text-6xl  text-start p-4 md:p-12 gap-4 md:gap-12">
 						<SplitText
 							className="font-classic text-white text-xl md:text-6xl text-start font-semibold"
 							text="Armaş Vakfı'nı Tanıyalım"
@@ -117,9 +118,9 @@ function RouteComponent() {
 						<Button size="lg">Daha Fazla</Button>
 					</div>
 
-					<div className="Hero__Right w-full md:w-1/2 bg-(--brand-secondary) text-white p-4 md:p-12">
+					<div className="Hero__Right w-full md:w-1/2">
 						<img
-							src={PlaceholderImage}
+							src={ArmasImage}
 							alt="Hero placeholder"
 							className="w-full h-full object-cover"
 						/>
@@ -145,7 +146,7 @@ function RouteComponent() {
 							icon={<AnchorSimpleIcon size={32} weight="duotone" />}
 						/>
 						<ListItem
-							title="Zor soruları sormaktan, doğruyu savunmaktan, gerektiğinde kârlı bir işe &quot;hayır&quot; demekten hiç vazgeçmedik. Cesaret, 52 Yıldır en yakın yol arkadaşımız."
+							title="Zor soruları sormaktan, doğruyu savunmaktan, gerektiğinde kârlı bir işe &quot;hayır&quot; demekten hiç vazgeçmedik. Cesaret, 52 yıldır en yakın yol arkadaşımız."
 							icon={<LineVerticalIcon size={32} weight="duotone" />}
 						/>
 						<ListItem
@@ -162,7 +163,7 @@ function RouteComponent() {
 							icon={<CircleHalfTiltIcon size={32} weight="duotone" />}
 						/>
 						<ListItem
-							title="İletişimin merkezinde insan var. Ekibimiz için, müşterilerimiz için, hedef kitleler için — hep insanı önce düşünüyoruz. Çünkü biliyoruz ki kalıcı etki, ancak insana dokunan iletişimle mümkündür."
+							title="İletişimin merkezinde insan var. Ekibimiz için, müşterilerimiz için, hedef kitleler için hep insanı önce düşünüyoruz. Çünkü biliyoruz ki kalıcı etki, ancak insana dokunan iletişimle mümkündür."
 							icon={<PersonSimpleIcon size={32} weight="duotone" />}
 						/>
 					</div>
