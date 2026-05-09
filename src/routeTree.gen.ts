@@ -13,6 +13,7 @@ import { Route as NelerYapiyoruzRouteImport } from './routes/neler-yapiyoruz'
 import { Route as IsOrtaklarimizRouteImport } from './routes/is-ortaklarimiz'
 import { Route as IletisimRouteImport } from './routes/iletisim'
 import { Route as HikayemizRouteImport } from './routes/hikayemiz'
+import { Route as AlaeddinAsnaRouteImport } from './routes/alaeddin-asna'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogBlogRouteImport } from './routes/blog/blog'
 
@@ -36,6 +37,11 @@ const HikayemizRoute = HikayemizRouteImport.update({
   path: '/hikayemiz',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AlaeddinAsnaRoute = AlaeddinAsnaRouteImport.update({
+  id: '/alaeddin-asna',
+  path: '/alaeddin-asna',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -49,6 +55,7 @@ const BlogBlogRoute = BlogBlogRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/alaeddin-asna': typeof AlaeddinAsnaRoute
   '/hikayemiz': typeof HikayemizRoute
   '/iletisim': typeof IletisimRoute
   '/is-ortaklarimiz': typeof IsOrtaklarimizRoute
@@ -57,6 +64,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/alaeddin-asna': typeof AlaeddinAsnaRoute
   '/hikayemiz': typeof HikayemizRoute
   '/iletisim': typeof IletisimRoute
   '/is-ortaklarimiz': typeof IsOrtaklarimizRoute
@@ -66,6 +74,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/alaeddin-asna': typeof AlaeddinAsnaRoute
   '/hikayemiz': typeof HikayemizRoute
   '/iletisim': typeof IletisimRoute
   '/is-ortaklarimiz': typeof IsOrtaklarimizRoute
@@ -76,6 +85,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/alaeddin-asna'
     | '/hikayemiz'
     | '/iletisim'
     | '/is-ortaklarimiz'
@@ -84,6 +94,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/alaeddin-asna'
     | '/hikayemiz'
     | '/iletisim'
     | '/is-ortaklarimiz'
@@ -92,6 +103,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/alaeddin-asna'
     | '/hikayemiz'
     | '/iletisim'
     | '/is-ortaklarimiz'
@@ -101,6 +113,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AlaeddinAsnaRoute: typeof AlaeddinAsnaRoute
   HikayemizRoute: typeof HikayemizRoute
   IletisimRoute: typeof IletisimRoute
   IsOrtaklarimizRoute: typeof IsOrtaklarimizRoute
@@ -138,6 +151,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HikayemizRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/alaeddin-asna': {
+      id: '/alaeddin-asna'
+      path: '/alaeddin-asna'
+      fullPath: '/alaeddin-asna'
+      preLoaderRoute: typeof AlaeddinAsnaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -157,6 +177,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AlaeddinAsnaRoute: AlaeddinAsnaRoute,
   HikayemizRoute: HikayemizRoute,
   IletisimRoute: IletisimRoute,
   IsOrtaklarimizRoute: IsOrtaklarimizRoute,

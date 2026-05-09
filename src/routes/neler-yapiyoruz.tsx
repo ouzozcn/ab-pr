@@ -335,7 +335,7 @@ function RouteComponent() {
 			iconSrc: SKA18,
 			title: "Küresel Sorumluluk",
 			description:
-				"Birleşmiş Milletler'in 17 Sürdürülebilir Kalkınma Hedefi'ni destekler, bu prensiplerin yaygınlaşması için çalışırız.",
+				"Birbiri ile bağlantılı 17 iddialı Amaç Türkiye dahil tüm Dünya'da insanların karşı karşıya kaldığı ana sorunların çözümünü hedefliyor.",
 		},
 	];
 
@@ -437,6 +437,18 @@ function RouteComponent() {
 					))}
 				</section>
 				{/* SKA İlkelerimiz List Ends */}
+				<div className="flex flex-col items-center justify-center w-full p-6 md:p-12">
+					<p className="text-lg md:text-xl p-4  text-center">
+						<a
+							href="https://turkiye.un.org/tr/sdgs"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<b>Birleşmiş Milletler'in 17 Sürdürülebilir Kalkınma Hedefi</b>
+						</a>
+						'ni destekler, bu prensiplerin yaygınlaşması için çalışırız.
+					</p>
+				</div>
 			</section>
 		</main>
 	);

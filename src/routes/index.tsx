@@ -1,11 +1,12 @@
 import {
 	AnchorSimpleIcon,
+	ArrowRightIcon,
 	ProjectorScreenIcon,
 	PuzzlePieceIcon,
 	TargetIcon,
 } from "@phosphor-icons/react";
-import { createFileRoute, Link } from "@tanstack/react-router";
-
+import { createFileRoute } from "@tanstack/react-router";
+import Button from "../components/Button";
 import SplitText from "../components/SplitText";
 import {
 	Accordion,
@@ -275,12 +276,15 @@ function App() {
 						geliştiriyoruz.
 					</p>
 					<div className="flex w-auto items-center justify-center">
-						<Link
-							className="text-white! font-bold! hover:text-white/80!"
+						<Button
+							label="Çalıştığımız Sektörleri Keşfedin"
+							type="secondary"
+							size="large"
+							rounded={true}
+							fullWidth={true}
 							to="/is-ortaklarimiz"
-						>
-							Çalıştığımız Sektörleri Keşfedin
-						</Link>
+							endIcon={<ArrowRightIcon size={24} />}
+						/>
 					</div>
 				</div>
 			</div>

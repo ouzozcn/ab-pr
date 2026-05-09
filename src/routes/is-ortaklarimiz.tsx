@@ -26,6 +26,12 @@ import {
 } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
 import SectionTitle from "#/components/ui/SectionTitle";
+import Partner1 from "../img/customers/change_org.svg";
+import Partner5 from "../img/customers/cydd.svg";
+import Partner6 from "../img/customers/g4t-logo-full.svg";
+import Partner2 from "../img/customers/hrant_hori.png";
+import Partner3 from "../img/customers/tog-logo-horizontal.svg";
+import Partner4 from "../img/customers/wb-aima-logo.jpg";
 
 interface IndustryItem {
 	id: number;
@@ -33,6 +39,72 @@ interface IndustryItem {
 	title: string;
 }
 
+interface PartnerItem {
+	id: number;
+	icon: React.ReactNode;
+	title: string;
+}
+
+const partnerItems: PartnerItem[] = [
+	{
+		id: 1,
+		icon: (
+			<img
+				src={Partner1}
+				alt="Change.org"
+				className="h-auto w-full object-contain"
+			/>
+		),
+		title: "Change.org",
+	},
+	{
+		id: 2,
+		icon: (
+			<img
+				src={Partner2}
+				alt="Hrant Dink Vakfı"
+				className="h-auto w-full object-contain"
+			/>
+		),
+		title: "Hrant Dink Vakfı",
+	},
+	{
+		id: 3,
+		icon: (
+			<img
+				src={Partner3}
+				alt="Tog Vakfı"
+				className="h-auto w-full object-contain"
+			/>
+		),
+		title: "TOG Vakfı",
+	},
+	{
+		id: 4,
+		icon: (
+			<img src={Partner4} alt="AIMA" className="h-auto w-full object-contain" />
+		),
+		title: "Ayvalık Uluslararası Müzik Akademisi",
+	},
+	{
+		id: 5,
+		icon: (
+			<img src={Partner5} alt="CYDD" className="h-auto w-full object-contain" />
+		),
+		title: "Çağdaş Yaşamı Destekleme Derneği",
+	},
+	{
+		id: 6,
+		icon: (
+			<img
+				src={Partner6}
+				alt="Good 4 Trust"
+				className="h-auto w-full object-contain"
+			/>
+		),
+		title: "Good 4 Trust",
+	},
+];
 const industryItems: IndustryItem[] = [
 	{
 		id: 1,
@@ -195,6 +267,23 @@ function RouteComponent() {
 				title="Gönüllü İşlerimiz"
 				description="Sivil Toplumun Gücüne İnanıyor, Onlarla Birlikte Yürüyoruz"
 			/>
+			<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start justify-center w-full p-6 md:p-12 space-y-8 md:space-y-0 gap-8 md:gap-12">
+				{partnerItems.map(({ id, icon, title }) => (
+					<div
+						key={id}
+						className="Partner__Item flex flex-col h-full items-center justify-center gap-4 md:gap-24 bg-stone-100/50 rounded-lg p-12 md:p-16"
+					>
+						<div className="Partner__Item__Icon flex flex-col items-start justify-center text-(--brand-primary)">
+							{icon}
+						</div>
+						<div className="Partner__Item__Content flex flex-col items-center justify-center">
+							<p className="text-xl md:text-4xl text-center font-semibold pl-2">
+								{title}
+							</p>
+						</div>
+					</div>
+				))}
+			</section>
 		</main>
 	);
 }

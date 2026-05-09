@@ -1,5 +1,6 @@
 import {
 	AnchorSimpleIcon,
+	ArrowUpRightIcon,
 	CircleHalfTiltIcon,
 	FlowerIcon,
 	LineVerticalIcon,
@@ -8,12 +9,12 @@ import {
 } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
 import SectionTitle from "#/components/ui/SectionTitle";
+import Button from "../components/Button";
 import HistoryofAB from "../components/HistoryofAB";
 import ListItem from "../components/ListItem";
 import SplitText from "../components/SplitText";
-import { Button } from "../components/ui/button";
 import ArmasImage from "../img/armas/armas_vakif_building.jpg";
-import PlaceholderImage from "../img/brand/image_placeholder_lg.png";
+import AlaaddinAsnaImage from "../img/brand/alaaddin-asna.jpg";
 export const Route = createFileRoute("/hikayemiz")({
 	component: RouteComponent,
 });
@@ -34,9 +35,9 @@ function RouteComponent() {
 				{/* Landing Section Start */}
 
 				<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12 text-justify ">
-					<div className="Section__Image w-full md:w-1/2 bg-(--brand-secondary) text-white p-4 md:p-12">
+					<div className="Section__Image w-full md:w-1/2 rounded-xl overflow-hidden">
 						<img
-							src={PlaceholderImage}
+							src={AlaaddinAsnaImage}
 							alt="Hero placeholder"
 							className="w-full h-full object-cover"
 						/>
@@ -64,6 +65,15 @@ function RouteComponent() {
 							somut göstergesi oldu.
 						</p>
 					</div>
+				</div>
+				<div className="flex flex-col items-center justify-center w-full mb-16 p-4">
+					<Button
+						label="Kurucumuz Prof. Dr. Alaeddin Asna'yı Tanıyın"
+						type="secondary"
+						size="large"
+						rounded={true}
+						to="/alaeddin-asna"
+					/>
 				</div>
 				{/* Landing Section End */}
 				{/* Landing Section Start */}
@@ -115,7 +125,14 @@ function RouteComponent() {
 							className="font-classic text-white text-xl md:text-6xl text-start font-semibold"
 							text="Armaş Vakfı'nı Tanıyalım"
 						/>
-						<Button size="lg">Daha Fazla</Button>
+						<Button
+							label="Daha Fazla"
+							type="tertiary"
+							size="large"
+							rounded={true}
+							to="https://armasvakfi.org/"
+							endIcon={<ArrowUpRightIcon size={24} />}
+						/>
 					</div>
 
 					<div className="Hero__Right w-full md:w-1/2">
