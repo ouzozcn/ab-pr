@@ -86,7 +86,7 @@ function App() {
 				<div className="Hero__Left flex w-full h-140  items-center justify-center font-sans text-white text-xl md:text-6xl text-start p-4 md:p-12">
 					<SplitText
 						className="font-classic text-white text-xl md:text-6xl text-start font-semibold"
-						text="Daha iyi bir dünya için 52 yıldır iletişimi dönüştürüyoruz. "
+						text="Daha iyi bir dünya için 52 yıldır iletişimi dönüştürüyoruz "
 					/>
 				</div>
 			</section>

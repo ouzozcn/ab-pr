@@ -64,7 +64,9 @@ function BlogPostRoute() {
 						</div>
 					}
 				>
-					<Body />
+					<div className=" text-justify">
+						<Body />
+					</div>
 				</Suspense>
 			</article>
 		</main>
