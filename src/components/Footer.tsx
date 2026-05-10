@@ -49,7 +49,7 @@ export default function Footer() {
 						İş Ortaklarımız
 					</Link>
 					<Link
-						to="/blog/blog"
+						to="/blog"
 						className="nav-link"
 						activeProps={{ className: "nav-link is-active" }}
 					>

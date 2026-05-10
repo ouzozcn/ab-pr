@@ -200,7 +200,13 @@ function RouteComponent() {
 						Kriz İletişimi
 					</p>
 					<img src={NavigateResponseImage} alt="Navigate Response" />
-					<p className="text-2xl font-semibold">Navigate Response </p>
+					<a
+						href="https://navigateresponse.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<p className="text-2xl font-semibold">Navigate Response </p>
+					</a>
 					<p className="text-lg">
 						Uluslararası nakliye, liman ve offshore alanlarında uzmanlaşmış
 						Londra merkezli küresel kriz iletişim ağı Navigate Response'un
@@ -212,7 +218,13 @@ function RouteComponent() {
 						Sanat ve Lüks Marka İletişimi
 					</p>
 					<img src={BoltonQuinnImage} alt="Navigate Response" />
-					<p className="text-2xl font-semibold">BOLTON&QUINN </p>
+					<a
+						href="https://boltonquinn.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<p className="text-2xl font-semibold">BOLTON&QUINN </p>
+					</a>
 					<p className="text-lg">
 						Türkiye ve bölge ülkelerinde hayata geçirilen uluslararası nitelikli
 						kültür-sanat etkinliklerinin iletişim çalışmaları için Londra
@@ -230,7 +242,13 @@ function RouteComponent() {
 						Çevre Hakları
 					</p>
 					<img src={CCBadge} alt="Navigate Response" />
-					<p className="text-2xl font-semibold">Clean Creatives </p>
+					<a
+						href="https://cleancreatives.org/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<p className="text-2xl font-semibold">Clean Creatives </p>
+					</a>
 					<p className="text-lg">
 						Fosil yakıt şirketleri, ilgili meslek kuruluşu ve ticaret odaları
 						veya fosil yakıt endüstrisiyle ilişkili paravan gruplar için
@@ -242,9 +260,15 @@ function RouteComponent() {
 						Kadın Hakları
 					</p>
 					<img src={WEPsImage} alt="Navigate Response" />
-					<p className="text-2xl font-semibold">
-						WOMEN’S EMPROVEMENT PRINCIPLES{" "}
-					</p>
+					<a
+						href="https://eca.unwomen.org/en/digital-library/publications/2017/01/weps-implementation-guide"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<p className="text-2xl font-semibold">
+							WOMEN’S EMPROVEMENT PRINCIPLES{" "}
+						</p>
+					</a>
 					<p className="text-lg">
 						Şeffaf ve etik iletişim anlayışıyla toplumda fayda yaratmak,
 						toplumsal cinsiyet eşitliğini desteklemek ve kadınların iş yaşamında

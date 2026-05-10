@@ -13,9 +13,9 @@ import { Route as NelerYapiyoruzRouteImport } from './routes/neler-yapiyoruz'
 import { Route as IsOrtaklarimizRouteImport } from './routes/is-ortaklarimiz'
 import { Route as IletisimRouteImport } from './routes/iletisim'
 import { Route as HikayemizRouteImport } from './routes/hikayemiz'
+import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AlaeddinAsnaRouteImport } from './routes/alaeddin-asna'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as BlogBlogRouteImport } from './routes/blog/blog'
 
 const NelerYapiyoruzRoute = NelerYapiyoruzRouteImport.update({
   id: '/neler-yapiyoruz',
@@ -37,6 +37,11 @@ const HikayemizRoute = HikayemizRouteImport.update({
   path: '/hikayemiz',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AlaeddinAsnaRoute = AlaeddinAsnaRouteImport.update({
   id: '/alaeddin-asna',
   path: '/alaeddin-asna',
@@ -47,78 +52,73 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogBlogRoute = BlogBlogRouteImport.update({
-  id: '/blog/blog',
-  path: '/blog/blog',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/alaeddin-asna': typeof AlaeddinAsnaRoute
+  '/blog': typeof BlogRoute
   '/hikayemiz': typeof HikayemizRoute
   '/iletisim': typeof IletisimRoute
   '/is-ortaklarimiz': typeof IsOrtaklarimizRoute
   '/neler-yapiyoruz': typeof NelerYapiyoruzRoute
-  '/blog/blog': typeof BlogBlogRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/alaeddin-asna': typeof AlaeddinAsnaRoute
+  '/blog': typeof BlogRoute
   '/hikayemiz': typeof HikayemizRoute
   '/iletisim': typeof IletisimRoute
   '/is-ortaklarimiz': typeof IsOrtaklarimizRoute
   '/neler-yapiyoruz': typeof NelerYapiyoruzRoute
-  '/blog/blog': typeof BlogBlogRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/alaeddin-asna': typeof AlaeddinAsnaRoute
+  '/blog': typeof BlogRoute
   '/hikayemiz': typeof HikayemizRoute
   '/iletisim': typeof IletisimRoute
   '/is-ortaklarimiz': typeof IsOrtaklarimizRoute
   '/neler-yapiyoruz': typeof NelerYapiyoruzRoute
-  '/blog/blog': typeof BlogBlogRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/alaeddin-asna'
+    | '/blog'
     | '/hikayemiz'
     | '/iletisim'
     | '/is-ortaklarimiz'
     | '/neler-yapiyoruz'
-    | '/blog/blog'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/alaeddin-asna'
+    | '/blog'
     | '/hikayemiz'
     | '/iletisim'
     | '/is-ortaklarimiz'
     | '/neler-yapiyoruz'
-    | '/blog/blog'
   id:
     | '__root__'
     | '/'
     | '/alaeddin-asna'
+    | '/blog'
     | '/hikayemiz'
     | '/iletisim'
     | '/is-ortaklarimiz'
     | '/neler-yapiyoruz'
-    | '/blog/blog'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AlaeddinAsnaRoute: typeof AlaeddinAsnaRoute
+  BlogRoute: typeof BlogRoute
   HikayemizRoute: typeof HikayemizRoute
   IletisimRoute: typeof IletisimRoute
   IsOrtaklarimizRoute: typeof IsOrtaklarimizRoute
   NelerYapiyoruzRoute: typeof NelerYapiyoruzRoute
-  BlogBlogRoute: typeof BlogBlogRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -151,6 +151,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HikayemizRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/alaeddin-asna': {
       id: '/alaeddin-asna'
       path: '/alaeddin-asna'
@@ -165,24 +172,17 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/blog': {
-      id: '/blog/blog'
-      path: '/blog/blog'
-      fullPath: '/blog/blog'
-      preLoaderRoute: typeof BlogBlogRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AlaeddinAsnaRoute: AlaeddinAsnaRoute,
+  BlogRoute: BlogRoute,
   HikayemizRoute: HikayemizRoute,
   IletisimRoute: IletisimRoute,
   IsOrtaklarimizRoute: IsOrtaklarimizRoute,
   NelerYapiyoruzRoute: NelerYapiyoruzRoute,
-  BlogBlogRoute: BlogBlogRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
