@@ -8,19 +8,73 @@ import {
 import { createFileRoute } from "@tanstack/react-router";
 import Button from "../components/Button";
 import SplitText from "../components/SplitText";
-import {
-	Accordion,
-	AccordionContent,
-	AccordionItem,
-	AccordionTrigger,
-} from "../components/ui/accordion";
+
 import SectionTitle from "../components/ui/SectionTitle";
 import BannerSustain from "../img/brand/banner-sustain.png";
 import BgImage from "../img/brand/bg-image.png";
-import PlaceholderImage from "../img/brand/image_placeholder_lg.png";
 import CCBadge from "../img/certificates/Clean_Creatives_Badge.svg";
 export const Route = createFileRoute("/")({ component: App });
+interface ServiceItem {
+	title: string;
+}
+const serviceItems: ServiceItem[] = [
+	{
+		title: "Sosyal Değişim Danışmanlığı",
+	},
+	{
+		title: "Kaos İletişimi",
+	},
+	{
+		title: "Sürdürülebilirlik İletişimi",
+	},
 
+	{
+		title: "Kurumsal Değerler İletişimi",
+	},
+	{
+		title: "Lider Konumlandırması",
+	},
+	{
+		title: "Medya İlişkileri ve Eğitimi",
+	},
+	{
+		title: "Ürün İletişimi",
+	},
+	{
+		title: "Kurum İçi İletişim",
+	},
+	{
+		title: "Etkinlik ve Proje Yönetimi",
+	},
+	{
+		title: "Kriz İletişimi",
+	},
+	{
+		title: "Dijital İletişim",
+	},
+	{
+		title: "İtibar Yönetimi",
+	},
+	{
+		title: "Entegre Pazarlama İletişimi",
+	},
+	{
+		title: "Toplumsal Sorumluluk Projeleri",
+	},
+	{
+		title: "Yaratıcı Proje Yönetimi",
+	},
+
+	{
+		title: "Kurumsal İletişim",
+	},
+	{
+		title: "İç İletişim ve Adil Yönetim Danışmanlığı",
+	},
+	{
+		title: "Sosyal Medya Strateji ve İçerik Danışmanlığı",
+	},
+];
 function App() {
 	return (
 		<main className="flex flex-col ">
@@ -100,25 +154,37 @@ function App() {
 				description="Şeffaf, Cesur ve Sürdürülebilir İletişim"
 			/>
 			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12">
-				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4">
+				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4 text-justify">
 					<p>
-						<b>50 yılı aşkın süredir</b> iletişimin, <b>daha iyi bir yaşamın</b>{" "}
-						temel taşı olduğuna inanıyor ve bunu tüm karar vericilere anlatmayı
-						en önemli hedeflerimizden biri olarak görüyoruz. Sahip olduğumuz
-						etik ilkelerin ışığında iletişim yolculuğumuzu sürdürüyoruz.
+						50 yılı aşkın süredir iletişimin,{" "}
+						<b>daha iyi bir yaşamın temel taşı</b> olduğuna inanıyor ve bunu tüm
+						karar vericilere anlatmayı en önemli hedeflerimizden biri olarak
+						görüyoruz. Sahip olduğumuz etik ilkelerin ışığında iletişim
+						yolculuğumuzu sürdürüyoruz.
 					</p>
 					<p>
-						Amacımız, kurumların{" "}
-						<b>şeffaf, kanıtlara dayalı ve cesur stratejiler</b>
-						geliştirmelerine destek olmak,{" "}
-						<b>toplumsal ve çevresel değerlere odaklı</b> bir iletişim
-						kurgulamalarını sağlamak.
+						<b>A&B Danışmanlık</b> olarak, 2026 yılı itibarıyla vakıf
+						sahipliğinde faaliyet gösteren bir iletişim danışmanlığı şirketiyiz.
+						Etik mirasımızı kalıcı kılmak ve değerlerimizi kişilere bağlı
+						olmaktan çıkararak kurumsal güvence altına almak amacıyla bu modele
+						geçtik. Şirket hisselerimizi <b>Armaş Vakfı</b>’na devrederek,
+						iletişim alanındaki deneyimimizi vakfın{" "}
+						<b>iklim, sürdürülebilirlik, etik ve liderlik</b> alanlarındaki
+						bilgi birikimiyle bütünleştirdik.
+					</p>
+					<p>
+						Vakıf çatısı altında faaliyet göstermek, uzun vadeli toplumsal ve
+						çevresel etki odağımızı güçlendiriyor. Kurumlara yalnızca görünürlük
+						değil; şeffaf, kanıta dayalı ve sorumluluk temelli stratejilerle{" "}
+						<b>güven ve kalıcılık</b> inşa eden bir iletişim ortaklığı
+						sunuyoruz.
 					</p>
 				</div>
-				<div className="Section__Image w-full md:w-1/2  text-white p-4 md:p-12">
+
+				<div className="Section__Image w-full md:w-1/2  text-white ">
 					<img
-						src={PlaceholderImage}
-						alt="Hero placeholder"
+						src={BannerSustain}
+						alt="Banner Sustain"
 						className="w-full h-full object-cover"
 					/>
 				</div>
@@ -130,65 +196,26 @@ function App() {
 				title="Neler Yapıyoruz?"
 				description="18 farklı uzmanlık alanında markanızın yanındayız."
 			/>
-			<div className="flex flex-col md:flex-row items-center justify-center w-full lg:min-h-[700px] p-12 md:p-24 gap-4 md:gap-12">
-				<div className="Section__Image w-full md:w-1/2  text-white p-4 md:p-12">
-					<img
-						src={BannerSustain}
-						alt="Banner Sustain"
-						className="w-full h-full object-cover"
-					/>
-				</div>
-				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg">
-					<Accordion
-						type="single"
-						collapsible
-						defaultValue="firstItem"
-						className="w-full"
+			<section className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full p-6 md:p-24 space-y-8 md:space-y-0 gap-2 md:gap-6">
+				{serviceItems.map(({ title }) => (
+					<div
+						key={title}
+						className="Blog__Item flex flex-col items-start justify-center w-full   gap-2 md:gap-4"
 					>
-						<AccordionItem value="firstItem">
-							<AccordionTrigger>Sürdürülebilirlik İletişimi</AccordionTrigger>
-							<AccordionContent>
-								Sürdürülebilirlik çalışmalarınızı yalnızca raporlamakla
-								kalmıyor; hedef kitlenizde gerçek farkındalık yaratan, markanızı
-								sorumlu bir aktör olarak konumlandıran stratejilere
-								dönüştürüyoruz.
-							</AccordionContent>
-						</AccordionItem>
-						<AccordionItem value="secondItem">
-							<AccordionTrigger>Kriz İletişimi</AccordionTrigger>
-							<AccordionContent>
-								Kriz anında her dakika değerlidir. Önceden hazırladığımız
-								senaryolar ve hızlı aksiyon planlarıyla itibarınızı korur,
-								kamuoyunda güveni yeniden inşa ederiz.
-							</AccordionContent>
-						</AccordionItem>
-						<AccordionItem value="thirdItem">
-							<AccordionTrigger>Lider Konumlandırması</AccordionTrigger>
-							<AccordionContent>
-								Yöneticilerinizi medyada, sektörde ve kamuoyunda güvenilir
-								otorite olarak konumlandırıyor; onlara görünürlük ve danışılan
-								bir kimlik kazandırıyoruz.
-							</AccordionContent>
-						</AccordionItem>
-						<AccordionItem value="fourthItem">
-							<AccordionTrigger>Sosyal Değişim Danışmanlığı</AccordionTrigger>
-							<AccordionContent>
-								Dünyadaki sosyal ve kültürel dönüşümleri yakından izliyor; ürün
-								ve hizmetlerinizi toplumsal faydaya dönüştüren projelerle
-								markanızın hem değerini hem etkisini artırıyoruz.
-							</AccordionContent>
-						</AccordionItem>
-					</Accordion>
-				</div>
-			</div>
+						<p className="text-xl md:text-2xl text-green-950 font-semibold font-sans">
+							{title}
+						</p>
+					</div>
+				))}
+			</section>
 			{/* Landing Section End */}
 			{/* Landing Section Start */}
 			<SectionTitle
 				title="Etik Duruşumuz"
 				description="Her 'Evet'in Arkasında Bir 'Hayır' Vardır"
 			/>
-			<div className="flex flex-col md:flex-row items-center justify-center w-full lg:min-h-[700px] p-12 md:p-24 gap-4 md:gap-12">
-				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4">
+			<div className="flex flex-col md:flex-row items-center justify-center w-full  p-12 md:px-24 md:py-0 gap-4 md:gap-12">
+				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4 text-justify">
 					<p>
 						Bizi farklı kılan yalnızca yaptıklarımız değil, yapmadıklarımızdır.
 						Tütün, nükleer enerji ve fosil yakıt şirketleriyle çalışmıyoruz.
@@ -222,52 +249,7 @@ function App() {
 				</div>
 			</div>
 			{/* Landing Section End */}
-			{/* Landing Section Start */}
-			<SectionTitle
-				title="Neden A&B Danışmanlık?"
-				description="52 Yıllık Güven, Tek Farkımız"
-			/>
-			<div className="flex flex-col md:flex-row items-center justify-center w-full lg:min-h-[700px] p-12 md:p-24 gap-4 md:gap-12">
-				<Accordion
-					type="single"
-					collapsible
-					defaultValue="firstItem"
-					className="w-full"
-				>
-					<AccordionItem value="firstItem">
-						<AccordionTrigger>Köklü Deneyim</AccordionTrigger>
-						<AccordionContent>
-							Türkiye'de halkla ilişkilerin henüz bir meslek olarak tanınmadığı
-							dönemde kurulduk. Bugün mesleğin kuramsal temellerine katkıda
-							bulunmuş, akademik literatüre girmiş bir kurumuz.
-						</AccordionContent>
-					</AccordionItem>
-					<AccordionItem value="secondItem">
-						<AccordionTrigger>Uzun Soluklu İş Birlikleri</AccordionTrigger>
-						<AccordionContent>
-							Müşterilerimizle ortalama iş birliği süremiz 10 yılın üzerinde.
-							Bizi tercih edenler genellikle bizi bırakmıyor. Bunun en büyük
-							nedeni: sonuç odaklı çalışmak kadar, güvene dayalı ilişki kurmak.
-						</AccordionContent>
-					</AccordionItem>
-					<AccordionItem value="thirdItem">
-						<AccordionTrigger>Uluslararası Ağ</AccordionTrigger>
-						<AccordionContent>
-							Londra merkezli Bolton & Quinn ve küresel kriz iletişimi uzmanı
-							Navigate Response ile stratejik ortaklıklarımız sayesinde
-							uluslararası projelerde de güçlü bir çözüm ortağıyız.
-						</AccordionContent>
-					</AccordionItem>
-				</Accordion>
-				<div className="Section__Image w-full md:w-1/2  text-white p-4 md:p-12">
-					<img
-						src={PlaceholderImage}
-						alt="Hero placeholder"
-						className="w-full h-full object-cover"
-					/>
-				</div>
-			</div>
-			{/* Landing Section End */}
+
 			{/* Landing Section Start */}
 			<div className="flex flex-col md:flex-row w-full  bg-(--brand-primary) text-white p-12 md:px-24 py-12 h-auto lg:h-120 justify-start items-center gap-4 ">
 				<div className="Left__Section flex w-full text-4xl font-classic text-italic font-semibold  ">
