@@ -4,6 +4,7 @@ interface BlogCardProps {
 	title: string;
 	description: string;
 	image: string;
+	readMoreHref?: string;
 	className?: string;
 }
 
@@ -11,6 +12,7 @@ export default function BlogCard({
 	title,
 	description,
 	image,
+	readMoreHref,
 	className,
 }: BlogCardProps) {
 	return (
@@ -29,7 +31,13 @@ export default function BlogCard({
 				</div>
 			</div>
 			<div className="Blog__Card__Actions">
-				<Button label="Read more" type="primary" size="large" rounded />
+				<Button
+					label="Read more"
+					type="primary"
+					size="large"
+					rounded
+					to={readMoreHref}
+				/>
 			</div>
 		</div>
 	);

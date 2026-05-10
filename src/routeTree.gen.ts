@@ -16,6 +16,8 @@ import { Route as HikayemizRouteImport } from './routes/hikayemiz'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AlaeddinAsnaRouteImport } from './routes/alaeddin-asna'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BlogIndexRouteImport } from './routes/blog/index'
+import { Route as BlogSlugRouteImport } from './routes/blog/$slug'
 
 const NelerYapiyoruzRoute = NelerYapiyoruzRouteImport.update({
   id: '/neler-yapiyoruz',
@@ -52,34 +54,49 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => BlogRoute,
+} as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => BlogRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/alaeddin-asna': typeof AlaeddinAsnaRoute
-  '/blog': typeof BlogRoute
+  '/blog': typeof BlogRouteWithChildren
   '/hikayemiz': typeof HikayemizRoute
   '/iletisim': typeof IletisimRoute
   '/is-ortaklarimiz': typeof IsOrtaklarimizRoute
   '/neler-yapiyoruz': typeof NelerYapiyoruzRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/alaeddin-asna': typeof AlaeddinAsnaRoute
-  '/blog': typeof BlogRoute
   '/hikayemiz': typeof HikayemizRoute
   '/iletisim': typeof IletisimRoute
   '/is-ortaklarimiz': typeof IsOrtaklarimizRoute
   '/neler-yapiyoruz': typeof NelerYapiyoruzRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/alaeddin-asna': typeof AlaeddinAsnaRoute
-  '/blog': typeof BlogRoute
+  '/blog': typeof BlogRouteWithChildren
   '/hikayemiz': typeof HikayemizRoute
   '/iletisim': typeof IletisimRoute
   '/is-ortaklarimiz': typeof IsOrtaklarimizRoute
   '/neler-yapiyoruz': typeof NelerYapiyoruzRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -91,15 +108,18 @@ export interface FileRouteTypes {
     | '/iletisim'
     | '/is-ortaklarimiz'
     | '/neler-yapiyoruz'
+    | '/blog/$slug'
+    | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/alaeddin-asna'
-    | '/blog'
     | '/hikayemiz'
     | '/iletisim'
     | '/is-ortaklarimiz'
     | '/neler-yapiyoruz'
+    | '/blog/$slug'
+    | '/blog'
   id:
     | '__root__'
     | '/'
@@ -109,12 +129,14 @@ export interface FileRouteTypes {
     | '/iletisim'
     | '/is-ortaklarimiz'
     | '/neler-yapiyoruz'
+    | '/blog/$slug'
+    | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AlaeddinAsnaRoute: typeof AlaeddinAsnaRoute
-  BlogRoute: typeof BlogRoute
+  BlogRoute: typeof BlogRouteWithChildren
   HikayemizRoute: typeof HikayemizRoute
   IletisimRoute: typeof IletisimRoute
   IsOrtaklarimizRoute: typeof IsOrtaklarimizRoute
@@ -172,13 +194,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof BlogRoute
+    }
   }
 }
+
+interface BlogRouteChildren {
+  BlogSlugRoute: typeof BlogSlugRoute
+  BlogIndexRoute: typeof BlogIndexRoute
+}
+
+const BlogRouteChildren: BlogRouteChildren = {
+  BlogSlugRoute: BlogSlugRoute,
+  BlogIndexRoute: BlogIndexRoute,
+}
+
+const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AlaeddinAsnaRoute: AlaeddinAsnaRoute,
-  BlogRoute: BlogRoute,
+  BlogRoute: BlogRouteWithChildren,
   HikayemizRoute: HikayemizRoute,
   IletisimRoute: IletisimRoute,
   IsOrtaklarimizRoute: IsOrtaklarimizRoute,
