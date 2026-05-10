@@ -29,7 +29,6 @@ import { useState } from "react";
 import {
 	Dialog,
 	DialogContent,
-	DialogDescription,
 	DialogHeader,
 	DialogTitle,
 } from "#/components/ui/dialog";
@@ -572,9 +571,6 @@ function RouteComponent() {
 						<>
 							<DialogHeader>
 								<DialogTitle>{selectedIndustry.title}</DialogTitle>
-								<DialogDescription>
-									Birlikte çalıştığımız marka ve kurumlar.
-								</DialogDescription>
 							</DialogHeader>
 							{selectedIndustry.clients.length > 0 ? (
 								<ul className="grid gap-4 pt-2">

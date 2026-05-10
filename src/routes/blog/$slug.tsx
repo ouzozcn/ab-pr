@@ -1,3 +1,4 @@
+import { SpinnerGapIcon } from "@phosphor-icons/react";
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { lazy, Suspense, useMemo } from "react";
 import {
@@ -5,7 +6,6 @@ import {
 	getBlogSummaryBySlug,
 	getMdxImport,
 } from "#/lib/blog-posts";
-
 export const Route = createFileRoute("/blog/$slug")({
 	loader: ({ params }): BlogPostSummary => {
 		const post = getBlogSummaryBySlug(params.slug);
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/blog/$slug")({
 	head: ({ loaderData }) => ({
 		meta: [
 			{
-				title: `${loaderData?.title} | Blog | A&B İletişim`,
+				title: `${loaderData?.title} | Blog | A&B Danışmanlık`,
 			},
 			{
 				name: "description",
@@ -55,10 +55,13 @@ function BlogPostRoute() {
 				</p>
 			</header>
 			*/}
-			<article className="prose prose-neutral prose-lg md:prose-xl max-w-3xl mx-auto w-full text-(--brand-text-primary) prose-headings:font-semibold prose-a:text-(--brand-primary)">
+			<article className="prose prose-neutral prose-lg md:prose-xl max-w-3xl mx-auto w-full text-(--brand-text-primary) prose-headings:font-semibold prose-a:text-(--brand-primary) ">
 				<Suspense
 					fallback={
-						<p className="text-(--brand-text-secondary)">Yükleniyor…</p>
+						<div className="flex flex-col items-center justify-center h-full">
+							<SpinnerGapIcon size={48} className="animate-spin" />
+							<p className="text-(--brand-text-secondary)">Yükleniyor…</p>
+						</div>
 					}
 				>
 					<Body />

@@ -14,23 +14,21 @@ function RouteComponent() {
 				title="Kurucumuz: Prof. Dr. Alaeddin Asna"
 				description="Türkiye’de Halkla İlişkiler Mesleğinin Kurucusu"
 			/>
-			<div className="Section__Image ] w-full p-4 md:p-12 flex  items-center justify-center rounded-xl overflow-hidden">
+			<div className="Section__Image  w-full p-4 md:px-12 md:pt-12 md:pb-0 flex  items-center justify-center rounded-xl overflow-hidden">
 				<img
 					src={AlaaddinAsnaImage}
 					alt="Alaeddin Asna"
 					className="w-[720px] object-cover rounded-xl"
 				/>
 			</div>
-			{/* Secondary Motto Section */}
-			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-3xl font-semibold text-center p-4 md:px-16 md:pt-12 md:pb-0">
-				<p>
+
+			{/* History of Founder Starts */}
+			<div className="flex flex-col items-center justify-center w-full p-12 md:p-24 text-justify gap-4 md:gap-12 text-md md:text-lg">
+				<p className="text-lg md:text-3xl font-semibold">
 					Türkiye’de halkla ilişkiler mesleğinin kurucusu olarak kabul edilen
 					Prof. Dr. Alaeddin Asna, hem akademide hem iş dünyasında iletişim
 					disiplininin gelişimine öncülük eden bir vizyonerdi.
 				</p>
-			</section>
-			{/* History of Founder Starts */}
-			<div className="flex flex-col items-center justify-center w-full p-12 md:p-24 text-justify gap-4 md:gap-12 text-md md:text-lg">
 				<p>
 					1961’de Ankara Üniversitesi Siyasal Bilgiler Fakültesi Ekonomi
 					Bölümü’nden mezun oldu. ABD Michigan State University’de İletişim
@@ -70,15 +68,13 @@ function RouteComponent() {
 					iletişim alanında yazdığı kitaplar, makaleler ve bildiriler hâlâ
 					kaynak niteliğini koruyor.
 				</p>
-			</div>
-			<section className="flex flex-col items-center justify-center font-sans text-(--brand-text-primary) text-lg md:text-3xl font-semibold text-center p-4 md:p-16 ">
-				<p>
+				<p className="text-lg md:text-3xl font-semibold">
 					Prof. Dr. Alaeddin Asna, etik değerleri, öncü vizyonu ve akademik
 					katkılarıyla yalnızca A&B’nin değil, Türkiye’de iletişim disiplininin
 					de temel taşlarından biri oldu. Onun vizyonu, bugün hâlâ bizim
 					pusulamız.
 				</p>
-			</section>
+			</div>
 		</main>
 	);
 }

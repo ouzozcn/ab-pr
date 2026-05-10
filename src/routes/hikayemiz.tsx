@@ -39,14 +39,14 @@ function RouteComponent() {
 				{/* Landing Section Start */}
 
 				<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12 text-justify ">
-					<div className="Section__Image w-full md:w-1/2 rounded-xl overflow-hidden">
+					<div className="Section__Image w-auto  ">
 						<img
 							src={AlaaddinAsnaImage}
 							alt="Kurucumuz Prof. Dr. Alaeddin Asna"
-							className="w-full h-full object-cover"
+							className="w-auto h-full rounded-xl overflow-hidden object-cover"
 						/>
 					</div>
-					<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4">
+					<div className="flex flex-col items-center justify-center w-full lg:min-w-160 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4">
 						<p>
 							1974 yılında Prof. Dr. Alaeddin Asna tarafından kurulan A&B
 							İletişim, <b>Türkiye’nin ilk halkla ilişkiler şirketidir</b>.

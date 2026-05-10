@@ -6,11 +6,6 @@ import Header from "../components/Header";
 
 import appCss from "../styles.css?url";
 
-{
-	/*}
-const THEME_INIT_SCRIPT = `(function(){try{var stored=window.localStorage.getItem('theme');var mode=(stored==='light'||stored==='dark'||stored==='auto')?stored:'auto';var prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;var resolved=mode==='auto'?(prefersDark?'dark':'light'):mode;var root=document.documentElement;root.classList.remove('light','dark');root.classList.add(resolved);if(mode==='auto'){root.removeAttribute('data-theme')}else{root.setAttribute('data-theme',mode)}root.style.colorScheme=resolved;}catch(e){}})();`;
-*/
-}
 export const Route = createRootRoute({
 	head: () => ({
 		meta: [
@@ -22,10 +17,10 @@ export const Route = createRootRoute({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "a&b | 52 Yıldır iletişimi dönüştürüyoruz.",
-				description: "a&b | 52 Yıldır iletişimi dönüştürüyoruz.",
-				keywords: "a&b, iletişim, dönüştürüyoruz, 52 Yıldır",
-				author: "a&b",
+				title: "A&B Danışmanlık | 52 Yıldır iletişimi dönüştürüyoruz",
+				description: "A&B Danışmanlık | 52 Yıldır iletişimi dönüştürüyoruz.",
+				keywords: "A&B Danışmanlık, iletişim, dönüştürüyoruz, 52 Yıldır",
+				author: "A&B Danışmanlık",
 				robots: "index, follow",
 				googlebot: "index, follow",
 				google: "index, follow",

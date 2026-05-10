@@ -32,7 +32,7 @@ function App() {
 				<div className="Hero__Left flex w-full h-140  items-center justify-center font-sans text-white text-xl md:text-6xl text-start p-4 md:p-12">
 					<SplitText
 						className="font-classic text-white text-xl md:text-6xl text-start font-semibold"
-						text="Daha iyi bir dünya için 52 Yıldır iletişimi dönüştürüyoruz. "
+						text="Daha iyi bir dünya için 52 yıldır iletişimi dönüştürüyoruz. "
 					/>
 				</div>
 			</section>
@@ -224,7 +224,7 @@ function App() {
 			{/* Landing Section End */}
 			{/* Landing Section Start */}
 			<SectionTitle
-				title="Neden a&b?"
+				title="Neden A&B Danışmanlık?"
 				description="52 Yıllık Güven, Tek Farkımız"
 			/>
 			<div className="flex flex-col md:flex-row items-center justify-center w-full lg:min-h-[700px] p-12 md:p-24 gap-4 md:gap-12">
@@ -271,13 +271,13 @@ function App() {
 			{/* Landing Section Start */}
 			<div className="flex flex-col md:flex-row w-full  bg-(--brand-primary) text-white p-12 md:px-24 py-12 h-auto lg:h-120 justify-start items-center gap-4 ">
 				<div className="Left__Section flex w-full text-4xl font-classic text-italic font-semibold  ">
-					<p>Finans'tan Kültür-Sanata, Enerjiden Sağlığa</p>
+					<p>Finanstan sanata, tekstilden sivil topluma…</p>
 				</div>
 				<div className="Right__Section flex flex-col text-md md:text-xl text-start items-start gap-4 md:gap-6">
 					<p>
 						30 yılı aşan iş birlikleriyle onlarca sektörde deneyim kazandık. Her
 						sektörün kendine özgü dinamiklerini, risklerini ve fırsatlarını
-						biliyor; buna göre özelleştirilmiş iletişim stratejileri
+						biliyor; buna göre özelleştirilmiş projeler ve iletişim stratejileri
 						geliştiriyoruz.
 					</p>
 					<div className="flex w-auto items-center justify-center">
