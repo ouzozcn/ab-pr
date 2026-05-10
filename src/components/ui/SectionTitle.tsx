@@ -21,11 +21,11 @@ export default function SectionTitle({
 				startOnVisible={true}
 				typingSpeed={100}
 				text={title || ""}
-				className="text-lg md:text-6xl font-sans font-bold"
+				className="text-4xl md:text-6xl font-sans font-bold"
 			/>
 			<BlurText
 				direction="bottom"
-				delay={100}
+				delay={200}
 				text={description || ""}
 				className="text-md md:text-xl font-classic"
 			/>

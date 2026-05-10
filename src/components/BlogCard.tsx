@@ -39,7 +39,7 @@ export default function BlogCard({
 					{description}
 				</div>
 			</div>
-			<div className="Blog__Card__Actions">
+			<div className="Blog__Card__Actions mt-auto">
 				<Button
 					label="Daha Fazla Oku"
 					type="primary"

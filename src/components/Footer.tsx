@@ -64,7 +64,7 @@ export default function Footer() {
 					</Link>
 				</div>
 			</div>
-			<div className="Social__Media__Links flex flex-col md:flex-row items-center justify-end w-full h-auto p-4 gap-4 md:gap-12">
+			<div className="Social__Media__Links flex flex-row items-center justify-center md:justify-end w-full h-auto p-4 gap-4 md:gap-12">
 				<SocialLink
 					href={"https://www.instagram.com/avebiletisim/"}
 					icon={<InstagramLogoIcon size={24} weight="fill" />}

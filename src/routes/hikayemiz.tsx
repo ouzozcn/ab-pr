@@ -126,7 +126,7 @@ function RouteComponent() {
 				<section className="flex flex-col md:flex-row w-full md:mb-24">
 					<div className="Hero__Left flex flex-col w-full md:w-1/2  bg-green-900 items-center justify-center font-sans text-white text-xl md:text-6xl  text-start p-4 md:p-12 gap-4 md:gap-12">
 						<SplitText
-							className="font-classic text-white text-xl md:text-6xl text-start font-semibold"
+							className="font-classic text-white text-4xl md:text-6xl text-start font-semibold"
 							text="Armaş Vakfı'nı Tanıyalım"
 						/>
 						<Button
