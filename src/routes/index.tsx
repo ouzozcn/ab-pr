@@ -83,10 +83,11 @@ function App() {
 				className="flex flex-col md:flex-row w-full bg-cover bg-center"
 				style={{ backgroundImage: `url(${BgImage})` }}
 			>
-				<div className="Hero__Left flex w-full h-140  items-center justify-center font-sans text-white text-xl md:text-6xl text-start p-4 md:p-12">
+				<div className="Hero__Animation flex w-full h-40 md:h-140  items-center justify-center font-sans text-white text-xl md:text-6xl text-start p-4 md:p-12">
 					<SplitText
-						className="font-classic text-white text-xl md:text-6xl text-start font-semibold"
+						className="font-classic text-white text-xl md:text-6xl text-start font-semibold h-full content-center"
 						text="Daha iyi bir dünya için 52 yıldır iletişimi dönüştürüyoruz "
+						tag="h1"
 					/>
 				</div>
 			</section>
@@ -154,7 +155,7 @@ function App() {
 				description="Şeffaf, Cesur ve Sürdürülebilir İletişim"
 			/>
 			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-24 gap-4 md:gap-12">
-				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4 text-justify">
+				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4">
 					<p>
 						50 yılı aşkın süredir iletişimin,{" "}
 						<b>daha iyi bir yaşamın temel taşı</b> olduğuna inanıyor ve bunu tüm
@@ -215,30 +216,21 @@ function App() {
 				description="Her 'Evet'in Arkasında Bir 'Hayır' Vardır"
 			/>
 			<div className="flex flex-col md:flex-row items-center justify-center w-full  p-12 md:px-24 md:py-0 gap-4 md:gap-12">
-				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4 text-justify">
+				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4 ">
 					<p>
-						Bizi farklı kılan yalnızca yaptıklarımız değil, yapmadıklarımızdır.
-						Tütün, nükleer enerji ve fosil yakıt şirketleriyle çalışmıyoruz.
-						Yeşil yıkamaya karşı duruyoruz. Lobicilik faaliyetlerinde yer
-						almıyoruz. 2023'te <b>Clean Creatives</b> taahhüdünü imzalayan ilk
-						Türk iletişim ajansı olduk.
-						<br /> <br />
-						Çünkü biliyoruz ki doğru iletişim, doğru ortaklarla kurulur.
+						<b>1974’ten</b> bu yana geliştirdiğimiz Etik İlkelerimiz
+						doğrultusunda <b>Clean Creatives</b> taahhüdünü imzaladığımızı
+						duyurduk. Böylece, fosil yakıt şirketleri ve bu endüstriyle
+						bağlantılı kuruluşlar için Halkla İlişkiler ve Reklam çalışmaları
+						yürütmeme taahhüdünde bulunan 500’den fazla yaratıcı kurum arasında
+						yerimizi aldık.
 					</p>
-					<ul className="list-disc list-inside text-(--brand-text-secondary) text-md md:text-lg text-start">
-						<li>
-							Greenwashing'e sıfır tolerans. Yanıltıcı çevrecilik iddialarının
-							arkasında durmuyoruz.
-						</li>
-						<li>
-							Yasaklı alanlar. Tütün, fosil yakıt, nükleer enerji ve siyasi
-							partilerle çalışmıyoruz.
-						</li>
-						<li>
-							Medya etiği. Haber–menfaat ilişkisini hiçbir koşulda
-							onaylamıyoruz.
-						</li>
-					</ul>
+					<p>
+						<b>Şeffaf, dürüst ve çevreye duyarlı iletişim anlayışımızla,</b>{" "}
+						uzun yıllardır fosil yakıt üreten, pazarlayan veya bu alanda taşeron
+						hizmet veren şirketlere danışmanlık vermemeyi tercih ediyor; sorumlu
+						şirket yaklaşımımız doğrultusunda hareket etmeyi sürdürüyoruz.
+					</p>
 				</div>
 				<div className="Section__Image w-full md:w-1/2 max-h-[595px] text-white p-4 md:p-12 flex items-center justify-center">
 					<img
