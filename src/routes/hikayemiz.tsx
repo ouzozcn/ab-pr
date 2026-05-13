@@ -70,7 +70,7 @@ function RouteComponent() {
 						</p>
 					</div>
 				</div>
-				<div className="flex flex-col items-center justify-center w-full mb-16 p-4">
+				<div className="flex flex-col items-center justify-center w-full md:mb-16 p-4">
 					<Button
 						label="Kurucumuz Prof. Dr. Alaeddin Asna'yı Tanıyın"
 						type="secondary"
@@ -121,7 +121,7 @@ function RouteComponent() {
 				{/* Landing Section End */}
 				{/* History of Founder Starts */}
 				{/* Hero Section */}
-				<section className="flex flex-col md:flex-row w-full md:mb-24">
+				<section className="flex flex-col md:flex-row w-full mb-12 md:mb-24">
 					<div className="Hero__Left flex flex-col w-full md:w-1/2  bg-green-900 items-center justify-center font-sans text-white text-xl md:text-6xl  text-start p-4 md:p-12 gap-4 md:gap-12">
 						<SplitText
 							className="font-classic text-white text-4xl md:text-6xl text-start font-semibold"
@@ -192,9 +192,9 @@ function RouteComponent() {
 				className="px-4 md:px-16! w-full"
 				title="Uluslararası İş Birliklerimiz"
 			/>
-			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-16 gap-4 md:gap-12">
+			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-16 gap-12">
 				<div className="flex flex-col items-center justify-center gap-4">
-					<p className="text-3xl font-semibold text-(--brand-primary) ">
+					<p className="text-2xl md:text-3xl font-semibold text-(--brand-primary) ">
 						Kriz İletişimi
 					</p>
 					<img src={NavigateResponseImage} alt="Navigate Response" />
@@ -212,7 +212,7 @@ function RouteComponent() {
 					</p>
 				</div>
 				<div className="flex flex-col items-center justify-center gap-4">
-					<p className="text-3xl font-semibold text-(--brand-primary) ">
+					<p className="text-2xl md:text-3xl font-semibold text-(--brand-primary) text-center md:text-start">
 						Sanat ve Lüks Marka İletişimi
 					</p>
 					<img src={BoltonQuinnImage} alt="Navigate Response" />
@@ -236,7 +236,7 @@ function RouteComponent() {
 			/>
 			<div className="flex flex-col md:flex-row items-center justify-center w-full p-12 md:p-16 gap-4 md:gap-12">
 				<div className="flex flex-col items-center justify-center gap-4">
-					<p className="text-3xl font-semibold text-(--brand-primary) ">
+					<p className="text-2xl md:text-3xl font-semibold text-(--brand-primary) ">
 						Çevre Hakları
 					</p>
 					<img src={CCBadge} alt="Navigate Response" />
@@ -254,7 +254,7 @@ function RouteComponent() {
 					</p>
 				</div>
 				<div className="flex flex-col items-center justify-center gap-4">
-					<p className="text-3xl font-semibold text-(--brand-primary) ">
+					<p className="text-2xl md:text-3xl font-semibold text-(--brand-primary) ">
 						Kadın Hakları
 					</p>
 					<img src={WEPsImage} alt="Navigate Response" />
@@ -263,8 +263,8 @@ function RouteComponent() {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<p className="text-2xl font-semibold">
-							WOMEN’S EMPROVEMENT PRINCIPLES{" "}
+						<p className="text-2xl font-semibold text-center md:text-start">
+							Women&apos;s Empowerment Principles (WEPs)
 						</p>
 					</a>
 					<p className="text-lg">

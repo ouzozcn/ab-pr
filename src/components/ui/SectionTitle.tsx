@@ -14,7 +14,7 @@ export default function SectionTitle({
 }: SectionTitleProps) {
 	return (
 		<div
-			className={`flex flex-col items-center md:items-start justify-center bg-(--brand-primary) lg:min-h-[208px]  text-white text-lg md:text-2xl text-center md:text-start p-4 md:px-24 py-12 gap-4 md:gap-6 ${className}`}
+			className={`flex flex-col items-center md:items-start justify-center bg-(--brand-primary) lg:min-h-[208px]  text-white text-lg md:text-2xl text-center md:text-start px-6 md:px-24 py-12 gap-4 md:gap-6 ${className}`}
 		>
 			<TextType
 				loop={false}
@@ -27,7 +27,7 @@ export default function SectionTitle({
 				direction="bottom"
 				delay={200}
 				text={description || ""}
-				className="text-md md:text-xl font-classic"
+				className="text-center! md:text-start text-md md:text-xl font-classic"
 			/>
 		</div>
 	);

@@ -41,7 +41,7 @@ function BlogPostRoute() {
 	if (!Body) throw notFound();
 
 	return (
-		<main className="flex flex-col px-4 md:px-16 py-10 md:py-16">
+		<main className="flex flex-col px-12 md:px-16 py-10 md:py-16">
 			{/*}
 			<header className="max-w-3xl mx-auto w-full mb-10">
 				<p className="text-sm text-(--brand-text-secondary) mb-2">

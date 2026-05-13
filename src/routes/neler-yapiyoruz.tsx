@@ -377,11 +377,11 @@ function RouteComponent() {
 				{/* Etik İlkelerimiz Section End */}
 				{/* Etik İlkelerimiz List Start */}
 
-				<section className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full p-6 md:p-12 space-y-8 md:space-y-0 gap-8 md:gap-12">
+				<section className="grid grid-cols-1 md:grid-cols-2 items-start justify-center w-full p-6 md:p-12 md:space-y-0 gap-8 md:gap-12">
 					{etikItems.map(({ orderNumber, title, description }) => (
 						<div
 							key={orderNumber}
-							className="List__Item__Body flex flex-col md:min-h-48 md:flex-row gap-2 md:gap-6 items-start justify-start font-sans p-2 md:p-6 rounded-xl border border-red-200 "
+							className="List__Item__Body flex flex-col md:min-h-48 md:flex-row gap-2 md:gap-6 items-start justify-start font-sans p-4 md:p-6 rounded-xl border border-red-200 "
 						>
 							<div className="List__Item__Icon flex rounded-lg text-xl md:text-2xl font-bold min-h-12 min-w-12 items-center justify-center  bg-(--brand-primary) text-white">
 								{orderNumber}

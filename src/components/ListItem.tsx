@@ -6,7 +6,7 @@ interface ListItemProps {
 
 export default function ListItem({ title, description, icon }: ListItemProps) {
 	return (
-		<div className="List__Item__Bodyflex flex flex-col md:flex-row gap-2 md:gap-6 items-start  justify-start font-sans  p-4 md:p-12 rounded-xl hover:bg-red-50/30">
+		<div className="List__Item__Body flex flex-col md:flex-row gap-4 md:gap-6 items-start  justify-start font-sans  p-4 md:p-12 rounded-xl hover:bg-red-50/30">
 			<div className="List__Item__Icon flex rounded-full min-h-16 min-w-16 items-center justify-center bg-white border border-red-300 text-red-500">
 				{icon}
 			</div>
