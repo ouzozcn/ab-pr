@@ -86,7 +86,7 @@ function App() {
 				<div className="Hero__Animation flex w-full h-40 md:h-140  items-center justify-center font-sans text-white text-xl md:text-6xl text-start p-4 md:p-12">
 					<SplitText
 						className="font-classic text-white text-xl md:text-6xl text-start font-semibold h-full content-center"
-						text="Daha iyi bir dünya için 52 yıldır iletişimi dönüştürüyoruz "
+						text="Daha iyi bir dünya için 52 yıldır iletişime güveniyoruz "
 						tag="h1"
 					/>
 				</div>
@@ -165,13 +165,10 @@ function App() {
 					</p>
 					<p>
 						<b>A&B Danışmanlık</b> olarak, 2026 yılı itibarıyla vakıf
-						sahipliğinde faaliyet gösteren bir iletişim danışmanlığı şirketiyiz.
-						Etik mirasımızı kalıcı kılmak ve değerlerimizi kişilere bağlı
-						olmaktan çıkararak kurumsal güvence altına almak amacıyla bu modele
-						geçtik. Şirket hisselerimizi <b>Armaş Vakfı</b>’na devrederek,
-						iletişim alanındaki deneyimimizi vakfın{" "}
-						<b>iklim, sürdürülebilirlik, etik ve liderlik</b> alanlarındaki
-						bilgi birikimiyle bütünleştirdik.
+						sahipliğinde faaliyet gösteren bir <b>danışmanlık şirketine</b>{" "}
+						dönüştük. Etik mirasımızı kalıcı kılmak ve değerlerimizi kişilere
+						bağlı olmaktan çıkararak kurumsal güvence altına almak amacıyla bu
+						modeli benimseme kararı aldık.
 					</p>
 					<p>
 						Vakıf çatısı altında faaliyet göstermek, uzun vadeli toplumsal ve

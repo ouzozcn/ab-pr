@@ -39,7 +39,7 @@ function RouteComponent() {
 					/>
 					<ListItem
 						title="Telefon"
-						description="+90 212 233 22 38 "
+						description="+90 530 401 15 74 "
 						icon={<PhoneIcon size={32} weight="duotone" />}
 					/>
 				</div>

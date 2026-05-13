@@ -33,9 +33,12 @@ import {
 	DialogTitle,
 } from "#/components/ui/dialog";
 import SectionTitle from "#/components/ui/SectionTitle";
+import Partner8 from "../img/customers/ankara_kasaum_2.png";
 import Partner1 from "../img/customers/change_org.svg";
+import Partner9 from "../img/customers/cuzaam-logo.png";
 import Partner5 from "../img/customers/cydd.svg";
 import Partner6 from "../img/customers/g4t-logo-full.svg";
+import Partner7 from "../img/customers/hayatadestek-logo.svg";
 import Partner2 from "../img/customers/hrant_hori.png";
 import Partner3 from "../img/customers/tog-logo-horizontal.svg";
 import Partner4 from "../img/customers/wb-aima-logo.jpg";
@@ -116,6 +119,39 @@ const partnerItems: PartnerItem[] = [
 			/>
 		),
 		title: "Good 4 Trust",
+	},
+	{
+		id: 7,
+		icon: (
+			<img
+				src={Partner7}
+				alt="Hayata Destek  İnsani Yardım Derneği "
+				className="h-auto w-full object-contain"
+			/>
+		),
+		title: "Hayata Destek İnsani Yardım Derneği",
+	},
+	{
+		id: 8,
+		icon: (
+			<img
+				src={Partner8}
+				alt="Kadın Sorunları Uygulama ve Araştırma Merkezi"
+				className="h-auto w-full object-contain"
+			/>
+		),
+		title: "Kadın Sorunları Uygulama ve Araştırma Merkezi",
+	},
+	{
+		id: 9,
+		icon: (
+			<img
+				src={Partner9}
+				alt="Cüzzamla Savaş Derneği"
+				className="h-auto w-full object-contain"
+			/>
+		),
+		title: "Cüzzamla Savaş Derneği",
 	},
 ];
 const industryItems: IndustryItem[] = [

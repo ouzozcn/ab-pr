@@ -88,14 +88,12 @@ function RouteComponent() {
 							Ama bizi biz yapan sadece tarihimiz değil. En başından beri
 							iletişimi <b>daha iyi bir yaşamın temel aracı</b> olarak
 							görüyoruz. Bizim için iletişim; şeffaflık, cesaret ve
-							sürdürülebilirlik demek. Toplumun ortak faydasını gözetmek,
-							markalara kalıcı değer katmak ve geleceğe sorumlulukla bakmak
-							demek. İşte bu yüzden 52 yıldır aynı pusulayı takip ediyoruz:
-							Vicdan, hakkaniyet ve ifade özgürlüğü.{" "}
-							<b>
-								Çünkü biliyoruz ki, iletişim yalnızca değişimi yansıtmaz;
-								değişimi mümkün kılar.
-							</b>
+							sürdürülebilirlik demek. Dünyanın ve toplumun ortak faydasını
+							gözetmek, markalara kalıcı değer katmak ve geleceğe sorumlulukla
+							bakmak demek. İşte bu yüzden 52 yıldır aynı pusulayı takip
+							ediyoruz: <b>Vicdan, hakkaniyet ve ifade özgürlüğü.</b> Çünkü
+							biliyoruz ki, iletişim yalnızca değişimi yansıtmaz; değişimi
+							mümkün kılar.
 						</p>
 						<p>
 							İşte tam da bu yüzden Ocak 2026 itibariyle, etik değerlerimizi
@@ -156,7 +154,7 @@ function RouteComponent() {
 				{/* Page Header */}
 				<SectionTitle
 					className="px-4 md:px-16! w-full"
-					title="Ajans Kültürü ve Değerler"
+					title="Kültürümüz ve Değerlerimiz"
 					description="52 Yıldır Aynı Pusulayı Takip Ediyoruz"
 				/>
 				{/* Contact Information */}

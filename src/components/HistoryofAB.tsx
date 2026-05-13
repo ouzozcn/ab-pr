@@ -215,6 +215,26 @@ export default function HistoryofAB() {
 				</div>
 			),
 		},
+		{
+			title: (
+				<>
+					2026
+					<br />
+					Günümüz
+				</>
+			),
+			content: (
+				<div className="space-y-6">
+					<p className="text-md font-normal text-neutral-800 md:text-xl">
+						Ocak 2026 itibariyle, etik değerlerimizi kalıcılaştırmak için,
+						Türkiye’de ve dünyada nadir görülen bir kurumsal modele geçtik. 52
+						yıllık etik anlayışımızı koruma ve geleceğe taşıma kararı aldık. Bu
+						doğrultuda, şirketin tüm hisselerini Sibel Asna Armaş Vakfı’na
+						devretti ve adımız A&B Danışmanlık oldu.
+					</p>
+				</div>
+			),
+		},
 	];
 	return (
 		<div className="relative w-full overflow-clip">
