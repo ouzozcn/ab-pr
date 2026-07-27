@@ -4,11 +4,12 @@ import {
 	ProjectorScreenIcon,
 	PuzzlePieceIcon,
 	TargetIcon,
+	ArrowUpRightIcon,
 } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
 import Button from "../components/Button";
 import SplitText from "../components/SplitText";
-
+import ArmasImage from "../img/armas/armas_vakif_building.jpg";
 import SectionTitle from "../components/ui/SectionTitle";
 import BannerSustain from "../img/brand/banner-sustain.png";
 import BgImage from "../img/brand/bg-image.png";
@@ -97,9 +98,7 @@ function App() {
 				<p>
 					1974’ten bu yana markalara güvenilir, cesur ve sürdürülebilir iletişim
 					çözümleri sunan bir danışmanlık firmasıyız. İletişimi, toplumsal fayda
-					ve ortak yaşam için en güçlü araç olarak görüyoruz. 52 yıllık
-					deneyimimizle, her projede şeffaflık, kanıtlanmış yöntemler ve kalıcı
-					etki yaratma hedefiyle çalışıyoruz.
+					ve ortak yaşam için en güçlü araç olarak görüyoruz. 52 yıllık deneyimimizle, her projede şeffaflık ve kalıcı etki yaratma hedefiyle çalışıyoruz.
 				</p>
 			</section>
 
@@ -171,11 +170,7 @@ function App() {
 						modeli benimseme kararı aldık.
 					</p>
 					<p>
-						Vakıf çatısı altında faaliyet göstermek, uzun vadeli toplumsal ve
-						çevresel etki odağımızı güçlendiriyor. Kurumlara yalnızca görünürlük
-						değil; şeffaf, kanıta dayalı ve sorumluluk temelli stratejilerle{" "}
-						<b>güven ve kalıcılık</b> inşa eden bir iletişim ortaklığı
-						sunuyoruz.
+						<b>Armaş Vakıf</b> çatısı altında faaliyet göstermek, uzun vadeli toplumsal ve çevresel etki odağımızı güçlendiriyor. Kurumlara yalnızca görünürlük değil; şeffaf, kanıta dayalı ve sorumluluk temelli stratejilerle güven ve kalıcılık inşa eden bir iletişim ortaklığı sunuyoruz.
 					</p>
 				</div>
 
@@ -189,6 +184,31 @@ function App() {
 			</div>
 			{/* Landing Section End */}
 
+			{/* Hero Section */}
+				<section className="flex flex-col md:flex-row w-full mb-12 md:mb-24">
+					<div className="Hero__Left flex flex-col w-full md:w-1/2  bg-green-900 items-center justify-center font-sans text-white text-xl md:text-6xl  text-start p-4 md:p-12 gap-4 md:gap-12">
+						<SplitText
+							className="font-classic text-white text-4xl md:text-6xl text-start font-semibold"
+							text="Armaş Vakfı'nı Tanıyalım"
+						/>
+						<Button
+							label="Daha Fazla"
+							type="tertiary"
+							size="large"
+							rounded={true}
+							to="https://armasvakfi.org/"
+							endIcon={<ArrowUpRightIcon size={24} />}
+						/>
+					</div>
+
+					<div className="Hero__Right w-full md:w-1/2">
+						<img
+							src={ArmasImage}
+							alt="Armaş Vakfı"
+							className="w-full h-full object-cover"
+						/>
+					</div>
+				</section>
 			{/* Landing Section Start */}
 			<SectionTitle
 				title="Neler Yapıyoruz?"
@@ -215,12 +235,7 @@ function App() {
 			<div className="flex flex-col md:flex-row items-center justify-center w-full  p-12 md:px-24 md:py-0 gap-4 md:gap-12">
 				<div className="flex flex-col items-center justify-center w-full md:w-1/2 text-(--brand-text-primary) text-md md:text-lg gap-2 md:gap-4 ">
 					<p>
-						<b>1974’ten</b> bu yana geliştirdiğimiz Etik İlkelerimiz
-						doğrultusunda <b>Clean Creatives</b> taahhüdünü imzaladığımızı
-						duyurduk. Böylece, fosil yakıt şirketleri ve bu endüstriyle
-						bağlantılı kuruluşlar için Halkla İlişkiler ve Reklam çalışmaları
-						yürütmeme taahhüdünde bulunan 500’den fazla yaratıcı kurum arasında
-						yerimizi aldık.
+						<b>1974</b>’ten bu yana geliştirdiğimiz etik ilkelerimiz doğrultusunda <b>Clean Creatives</b> taahhüdünü imzaladık. Böylece, fosil yakıt, tütün ve savunma sanayi şirketleri ve bu endüstrilerle bağlantılı kuruluşlar için iletişim ve danışmanlık yürütmeme taahhüdünde bulunan 500’den fazla yaratıcı kurum arasında yerimizi aldık.
 					</p>
 					<p>
 						<b>Şeffaf, dürüst ve çevreye duyarlı iletişim anlayışımızla,</b>{" "}

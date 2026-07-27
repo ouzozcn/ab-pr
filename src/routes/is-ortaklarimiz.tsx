@@ -42,6 +42,7 @@ import Partner7 from "../img/customers/hayatadestek-logo.svg";
 import Partner2 from "../img/customers/hrant_hori.png";
 import Partner3 from "../img/customers/tog-logo-horizontal.svg";
 import Partner4 from "../img/customers/wb-aima-logo.jpg";
+import Partner10 from "../img/customers/turetim_logo.webp";
 
 interface IndustryClient {
 	name: string;
@@ -153,6 +154,17 @@ const partnerItems: PartnerItem[] = [
 		),
 		title: "Cüzzamla Savaş Derneği",
 	},
+	{
+		id: 10,
+		icon: (
+			<img
+				src={Partner10}
+				alt="Türetim Ekonomisi Derneği"
+				className="h-auto w-full object-contain"
+			/>
+		),
+		title: "Türetim Ekonomisi Derneği",
+	},
 ];
 const industryItems: IndustryItem[] = [
 	{
@@ -171,16 +183,14 @@ const industryItems: IndustryItem[] = [
 		title: "Finans",
 		clients: [
 			{ name: "Alternatif Bank" },
-			{ name: "Amerikan Express" },
-			{ name: "Arena Faktoring" },
-			{
-				name: "Benkar Tüketici Finansman ve Kart Hizmetleri A.Ş.",
-			},
-			{ name: "Garanti BBVA ve İştirakleri" },
-			{ name: "Diebold" },
-			{ name: "Figopara" },
-			{ name: "PWC" },
-			{ name: "Türkiye Bankalar Birliği" },
+  { name: "Amerikan Express" },
+  { name: "Arena Faktoring" },
+  { name: "Benkar Tüketici Finansman ve Kart Hizmetleri A.Ş." },
+  { name: "Diebold" },
+  { name: "Figopara" },
+  { name: "Garanti BBVA ve İştirakleri" },
+  { name: "PWC" },
+  { name: "Türkiye Bankalar Birliği" }
 		],
 	},
 	{

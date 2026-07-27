@@ -55,7 +55,7 @@ function BlogPostRoute() {
 				</p>
 			</header>
 			*/}
-			<article className="prose prose-neutral prose-lg md:prose-xl max-w-3xl mx-auto w-full text-(--brand-text-primary) prose-headings:font-semibold prose-a:text-(--brand-primary) ">
+			<article className="prose prose-neutral prose-md md:prose-lg max-w-3xl mx-auto w-full text-(--brand-text-primary) prose-headings:font-semibold prose-a:text-(--brand-primary) ">
 				<Suspense
 					fallback={
 						<div className="flex flex-col items-center justify-center h-full">
@@ -64,7 +64,7 @@ function BlogPostRoute() {
 						</div>
 					}
 				>
-					<div className=" text-justify">
+					<div className=" text-start">
 						<Body />
 					</div>
 				</Suspense>

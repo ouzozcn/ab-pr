@@ -52,7 +52,7 @@ function RouteComponent() {
 							İletişim, <b>Türkiye’nin ilk halkla ilişkiler şirketidir</b>.
 							Cağaloğlu’ndaki mütevazı bir ofisten başlayan yolculuğumuz, kısa
 							sürede iş dünyasının güvenini kazanarak Teşvikiye’de köklü bir
-							iletişim kurumuna dönüştü. 1995’te Sibel Asna’nın liderliğinde
+							iletişim kurumuna dönüştü. 1995’te Sibel Asna Özesmi’nın liderliğinde
 							yeniden yapılanan şirketimiz, 2000’lerden itibaren A&B İletişim
 							A.Ş. adıyla yoluna devam etti. Bugün{" "}
 							<b>52 yıllık deneyimimizle</b>, hem ulusal hem de uluslararası
@@ -100,7 +100,7 @@ function RouteComponent() {
 							kalıcılaştırmak için, Türkiye’de ve dünyada nadir görülen bir
 							kurumsal modele geçtik. 52 yıllık etik anlayışımızı koruma ve
 							geleceğe taşıma kararı aldık. Bu doğrultuda, şirketin tüm
-							hisselerini Sibel Asna <b>Armaş Vakfı</b>’na devretti. Yeni
+							hisselerini Sibel Asna Özesmi <b>Armaş Vakfı</b>’na devretti. Yeni
 							yapımızla birlikte yolumuza A&B Danışmanlık adıyla devam ediyoruz.
 							Bu adımı, klasik bir şirket devri olarak değil; iletişim gibi son
 							derece güçlü ve aynı zamanda yüksek sorumluluk taşıyan bir alanda,

@@ -229,7 +229,7 @@ export default function HistoryofAB() {
 						Ocak 2026 itibariyle, etik değerlerimizi kalıcılaştırmak için,
 						Türkiye’de ve dünyada nadir görülen bir kurumsal modele geçtik. 52
 						yıllık etik anlayışımızı koruma ve geleceğe taşıma kararı aldık. Bu
-						doğrultuda, şirketin tüm hisselerini Sibel Asna Armaş Vakfı’na
+						doğrultuda, şirketin tüm hisselerini Sibel Asna Özesmi Armaş Vakfı’na
 						devretti ve adımız A&B Danışmanlık oldu.
 					</p>
 				</div>
