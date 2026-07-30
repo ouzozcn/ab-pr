@@ -183,14 +183,14 @@ const industryItems: IndustryItem[] = [
 		title: "Finans",
 		clients: [
 			{ name: "Alternatif Bank" },
-  { name: "Amerikan Express" },
-  { name: "Arena Faktoring" },
-  { name: "Benkar Tüketici Finansman ve Kart Hizmetleri A.Ş." },
-  { name: "Diebold" },
-  { name: "Figopara" },
-  { name: "Garanti BBVA ve İştirakleri" },
-  { name: "PWC" },
-  { name: "Türkiye Bankalar Birliği" }
+  			{ name: "Amerikan Express" },
+  			{ name: "Arena Faktoring" },
+  			{ name: "Benkar Tüketici Finansman ve Kart Hizmetleri A.Ş." },
+  			{ name: "Diebold" },
+  			{ name: "Figopara" },
+  			{ name: "Garanti BBVA ve İştirakleri" },
+  			{ name: "PWC" },
+  			{ name: "Türkiye Bankalar Birliği" }
 		],
 	},
 	{
