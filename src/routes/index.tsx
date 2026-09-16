@@ -185,7 +185,7 @@ function App() {
 			{/* Landing Section End */}
 
 			{/* Hero Section */}
-				<section className="flex flex-col md:flex-row w-full mb-12 md:mb-24">
+				<section className="flex flex-col md:flex-row w-full ">
 					<div className="Hero__Left flex flex-col w-full md:w-1/2  bg-green-900 items-center justify-center font-sans text-white text-xl md:text-6xl  text-start p-4 md:p-12 gap-4 md:gap-12">
 						<SplitText
 							className="font-classic text-white text-4xl md:text-6xl text-start font-semibold"
